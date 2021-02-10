@@ -1,0 +1,15 @@
+persistence:
+  enabled: false
+
+auth:
+  username: rabbit
+  password: rabbit
+  
+#service:
+#  type: NodePort 
+#  nodePort: 9000
+  
+#ingress:
+#  enabled: true
+#  path: /mq
+#  hostname: arch.homework

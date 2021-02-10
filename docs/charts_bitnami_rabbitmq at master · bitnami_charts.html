@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq -->
+<html lang="en" data-color-mode="light" data-light-theme="light" data-dark-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <link rel="dns-prefetch" href="https://github.githubassets.com/">
+  <link rel="dns-prefetch" href="https://avatars.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-rF3cnLJE5IkKUWFkw54emxUMV82DhbZ9aJun83zhvBgJ7J7ZXC20bEFVuLY9RRRC60Ig+pHQO57DuYBrYO+cAA==" rel="stylesheet" href="./charts_bitnami_rabbitmq at master · bitnami_charts_files/frameworks-ac5ddc9cb244e4890a516164c39e1e9b.css">
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-zjL6+UqsTNi7Yf23r9TPUP+7hzE35s/T1VeFNoeGaOIBY3FRlsvtmAND5atgj8HGXTVtv7vlS+xHPM/3obC08Q==" rel="stylesheet" href="./charts_bitnami_rabbitmq at master · bitnami_charts_files/behaviors-ce32faf94aac4cd8bb61fdb7afd4cf50.css">
+    
+    
+    
+    <link crossorigin="anonymous" media="all" integrity="sha512-uvwNUrlLhBCUoecA43ZI8X6WaYj2jMJ56KbdxRy1N/mA63B7J5OhYu1Cu610hci9ejLJ40u3S7J236MJ6agYAQ==" rel="stylesheet" href="./charts_bitnami_rabbitmq at master · bitnami_charts_files/github-bafc0d52b94b841094a1e700e37648f1.css">
+
+  <link rel="stylesheet" crossorigin="anonymous" href="./charts_bitnami_rabbitmq at master · bitnami_charts_files/main.css"><script crossorigin="anonymous" defer="defer" integrity="sha512-8K2vvwbW+6H27Nad5ydg8PA2/aMD/LKq+EiK9s0U0hhVZxCI2tWBsYk9beAtisRw2j+Or5k2/F+6dk02nmj/PA==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/environment-f0adafbf.js.Без названия"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-uegmzg6YcTlTw7auMhvPV/UsnZ1KDIdAWhaEI/R8dHN24lz0HyO2tGwv0e2gdPoMXA6AzXeJng5gP77sAU3AgA==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/chunk-frameworks-b9e826ce.js.Без названия"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-H0rjYD2T5N5sO+6lNwiPpR9vnKQFdF3PSHlSFyJNaP6mrELu6EIp8fKg11wPF40bETdGz1voc/bCXd0v729BuA==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/chunk-vendor-1f4ae360.js.Без названия"></script>
+  
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-zND3g6ewPwm2fXZxvYcm3ngBLYkFhhFbD9OcxkSpPv8hNZgnzrGloYNzt827UGK3+8kc4Vs+6gnB5FQSSQaWqg==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/behaviors-ccd0f783.js.Без названия"></script>
+  
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-evfy6RyDyXvLuaEEFaUaIlw9dSRgvKkF3rMeUELkvXq7sGEK/43vTg+3EE6E8nOsjpuPyYQjgS8bxzqkTjlZag==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-7af7f2e9.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-obMR8mPKx8OvqRe34LgnUcxeJ1qujiA4ND3H6UX13ExMlA/WfHLjEzXRmgGRcRvN/8J1nzc+Z+jgz/PLTFy6zg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-a1b311f2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-V4eZZUWgD9RSVrXzWPGn+vP/9+D0oCITMcifb0ktnwvLUUuXHtwiPWXiu4CYxU4zzC1k6DMTDCZG/GQi0QOJpA==" type="application/javascript" data-module-id="./chunk-edit.js" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/chunk-edit-57879965.js.Без названия"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-TGnbT/6B5dxVwEk7iOlwSY9mfqhfq8m05ec+KjdlfEwoieq73iBeyidClQUSmFa2snukwzF9peY8c7FJf9FARA==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-4c69db4f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-NwYkwzxETzKUYRXumHDsBIuggkh86KmJ1WrwWZW5wTvVPf047+wOmOHI5b4D65bfdtd3WbXJ7k+3ZWoxpIaqcA==" type="application/javascript" data-module-id="./chunk-insights-graph.js" data-src="https://github.githubassets.com/assets/chunk-insights-graph-370624c3.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-FrgE/rf7iPI/rYtbUZnmUu7DATKUTwSFoOvztvKKOAfNL25SFfJ65gUzEd0E0GnjlWoCIzFOJYv+irUJ0vEecA==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-16b804fe.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-tcH4xCRuMBAh1PruDaiwGnRIbHlF6bGLhxyCQ16uqok1cV5QFMguVPWJtN9KI0jGQOgN+Pha3+uOUXhXdfK/qw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-b5c1f8c4.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-E+H+wAtjiqutBvn2cnXzDIvmasIhYiS7i7JzOfFUwo+Ej8zT54OrJtP//RhwixnypgOpCF4JvqzYy6zOtORDmg==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-13e1fec0.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-U+Pp1bYuA3fRqhike5Go//O/vsExaZLz00lrIby+rZ88yf03nQHz3wLZR9paWkakpD7TH5nS6AUpabCc7OFWpg==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-53e3e9d5.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-QBwrFY4kzAVN0nZmTYJLeEhi5bQ+42rE8h1g384XeZb7n62BykcUICACtaDQ473aIrRf38RSR7WDfNEIVuSlTA==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-401c2b15.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-wTiR0OTWRXem3tK60//Fv7PTDh1X8HtuH6lFldt3DQ/VbwoB2KFNLNASYsfuKhZxXF12km7x0kHMrHD95PnvXw==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-c13891d0.js"></script>
+  
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-DpXIi8FJW+dFfBQq+HhHG/Nf7ZQpeOPcXkZIz0uSUIDqp41/xdE5luenxE1K6usuC8JtW8OTKUHYDP3HmBHARw==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/codespaces-0e95c88b.js.Без названия"></script>
+<script crossorigin="anonymous" defer="defer" integrity="sha512-PK4g4u9SxtGmCh9nyVpe+l0ZryxffN/JuoFpFxBcQXk7hdrYTL/9XZuS/nlnWoLy1ry79vsVqWK8XFag/BPfDA==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/repositories-3cae20e2.js.Без названия"></script>
+<script crossorigin="anonymous" defer="defer" integrity="sha512-aw5tciVT0IsECUmMuwp9ez60QReE2/yFNL1diLgZnOom6RhU8+0lG3RlAKto4JwbCoEP15E41Pksd7rK5BKfCQ==" type="application/javascript" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/topic-suggestions-6b0e6d72.js.Без названия"></script>
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>charts/bitnami/rabbitmq at master · bitnami/charts</title>
+    <meta name="description" content="Helm Charts. Contribute to bitnami/charts development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+  <meta name="apple-itunes-app" content="app-id=1477376905">
+    <meta name="twitter:image:src" content="https://avatars.githubusercontent.com/u/5446553?s=400&amp;v=4"><meta name="twitter:site" content="@github"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="bitnami/charts"><meta name="twitter:description" content="Helm Charts. Contribute to bitnami/charts development by creating an account on GitHub.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/5446553?s=400&amp;v=4"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="bitnami/charts"><meta property="og:url" content="https://github.com/bitnami/charts"><meta property="og:description" content="Helm Charts. Contribute to bitnami/charts development by creating an account on GitHub.">
+
+
+
+    
+
+  <link rel="assets" href="https://github.githubassets.com/">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/73081570/ws?session=eyJ2IjoiVjMiLCJ1Ijo3MzA4MTU3MCwicyI6NjQzODk1Mzc1LCJjIjozMDgxNTI3MzU2LCJ0IjoxNjEyODc2NTQwfQ==--bfea9ccda739b92afbed2e14c4e57a1d9fa6e60599a2b35b84ff56d2b9d234ad" data-refresh-url="/_alive">
+    <link rel="shared-web-socket-src" href="https://github.com/socket-worker-5029ae85.js">
+  <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+
+  <meta name="request-id" content="FA9C:10B1:EF9074:12D73FB:60228AFC" data-pjax-transient="true"><meta name="html-safe-nonce" content="aa82b95375c10423e882764abc985cd08a5b52fe22b5ccce9eecadc3f7729db4" data-pjax-transient="true"><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwicmVxdWVzdF9pZCI6IkZBOUM6MTBCMTpFRjkwNzQ6MTJENzNGQjo2MDIyOEFGQyIsInZpc2l0b3JfaWQiOiI1MDc2MjMzOTA5MDEyNzQ1OTg2IiwicmVnaW9uX2VkZ2UiOiJmcmEiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"><meta name="visitor-hmac" content="9cec67fd9151f4531e5db7e0b25df6823e59240546e8d28ce2a20846a8ab03b5" data-pjax-transient="true">
+
+    <meta name="hovercard-subject-tag" content="repository:52300938" data-pjax-transient="">
+
+
+  <meta name="github-keyboard-shortcuts" content="repository,source-code" data-pjax-transient="true">
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="github"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-actor-id" content="73081570"><meta name="octolytics-actor-login" content="morozovav82"><meta name="octolytics-actor-hash" content="a183482cedaa9fff8f54a564af2e700aa50183a16c065444827dc23608439dcd">
+
+  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/files/disambiguate" data-pjax-transient="true">
+
+  
+
+
+
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="morozovav82">
+
+
+      <meta name="expected-hostname" content="github.com">
+
+      <meta name="js-proxy-site-detection-payload" content="OGRjM2VkZThjMDA1MWE0NWQ0MzBhMjRkOTU4ZDVlZmExZmFhYTU4NDhlOTcyMmZhOWJhNDA1ODhmOWYxMGZmZnx7InJlbW90ZV9hZGRyZXNzIjoiOTEuMjM2LjE0My43NyIsInJlcXVlc3RfaWQiOiJGQTlDOjEwQjE6RUY5MDc0OjEyRDczRkI6NjAyMjhBRkMiLCJ0aW1lc3RhbXAiOjE2MTI4NzY1NDAsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,JS_HTTP_CACHE_HEADERS,ACTIONS_SHORT_SHA_WARNING,TASK_LIST_AUTOCOMPLETE,MULTI_WORD_SUGGESTER">
+
+  <meta http-equiv="x-pjax-version" content="9e4631aabc7ae9ef2811c0b843c03356109973674976c281ddb61e0590d22df5">
+  
+
+        <link href="https://github.com/bitnami/charts/commits/master.atom" rel="alternate" title="Recent Commits to charts:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/bitnami/charts git https://github.com/bitnami/charts.git">
+
+  <meta name="octolytics-dimension-user_id" content="5446553"><meta name="octolytics-dimension-user_login" content="bitnami"><meta name="octolytics-dimension-repository_id" content="52300938"><meta name="octolytics-dimension-repository_nwo" content="bitnami/charts"><meta name="octolytics-dimension-repository_public" content="true"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="52300938"><meta name="octolytics-dimension-repository_network_root_nwo" content="bitnami/charts">
+
+
+
+    <link rel="canonical" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" data-pjax-transient="">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <meta name="browser-optimizely-client-errors-url" content="https://api.github.com/_private/browser/optimizely_client/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+    <meta name="color-scheme" content="light dark">
+
+
+  <link rel="manifest" href="https://github.com/manifest.json" crossorigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-responsive" style="word-wrap: break-word;">
+    
+
+    <div class="position-relative js-header-wrapper ">
+      <a href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#start-of-content" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+      <span class="progress-pjax-loader width-full js-pjax-loader-bar Progress position-fixed">
+    <span style="background-color: #79b8ff;width: 0%;" class="Progress-item progress-pjax-loader-bar "></span>
+</span>      
+      
+
+
+            <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap" role="banner">
+    <div class="Header-item mt-n1 mb-n1  d-none d-md-flex">
+      <a class="Header-link " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-ga-click="Header, go to dashboard, icon:logo">
+  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+    </div>
+
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+      </button>
+    </div>
+
+    <div class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+          <div class="header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to" role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox" aria-expanded="false">
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="52300938" data-scoped-search-url="/bitnami/charts/search" data-owner-scoped-search-url="/orgs/bitnami/search" data-unscoped-search-url="/search" action="https://github.com/bitnami/charts/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+        <input type="text" class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" value="" placeholder="Search or jump to…" data-unscoped-placeholder="Search or jump to…" data-scoped-placeholder="Search or jump to…" autocapitalize="off" aria-autocomplete="list" aria-controls="jump-to-results" aria-label="Search or jump to…" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" spellcheck="false" autocomplete="off">
+          <input type="hidden" value="6hJW91M6rn9OSHyjwVn8jWLNTezLhMczbZsKslI2pJKD7wXsbQNPF7vEIv0YL1osYEyIWKpCiM48gLNixlC35g==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf">
+          <input type="hidden" class="js-site-search-type-field" name="type">
+            <img src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" data-item-type="suggestion">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" data-item-type="scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-owner-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" data-item-type="global_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <svg viewBox="0 0 16 16" fill="none" style="box-sizing: content-box; color: var(--color-icon-primary);" class="m-3" width="32" height="32">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke">
+    <animatetransform attributeName="transform" type="rotate" from="0 8 8" to="360 8 8" dur="1s" repeatCount="indefinite"></animatetransform>
+  </path>
+</svg>
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+        <nav class="d-flex flex-column flex-md-row flex-self-stretch flex-md-self-auto" aria-label="Global">
+      <a class="Header-link py-md-3 d-block d-md-none py-2 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:dashboard:user" aria-label="Dashboard" href="https://github.com/dashboard">
+        Dashboard
+</a>
+    <a class="js-selected-navigation-item Header-link mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="https://github.com/pulls">
+        Pull<span class="d-inline d-md-none d-lg-inline"> request</span>s
+</a>
+    <a class="js-selected-navigation-item Header-link mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="https://github.com/issues">
+      Issues
+</a>
+
+      <div class="d-flex position-relative">
+        <a class="js-selected-navigation-item Header-link flex-auto mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="https://github.com/marketplace">
+          Marketplace
+</a>      </div>
+
+    <a class="js-selected-navigation-item Header-link mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="https://github.com/explore">
+      Explore
+</a>
+
+
+
+    <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" href="https://github.com/settings/profile">
+      Settings
+</a>
+    <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" href="https://github.com/morozovav82">
+      <img class="avatar avatar-user" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/73081570" width="20" height="20" alt="@morozovav82">
+      morozovav82
+</a>
+    <!-- '"` --><!-- </textarea></xmp> --><form action="https://github.com/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="rIamD/IhV5S+lP0uATHgU2g2giyK605sxDn7vLar+8Bz+8SgMouZa3Z3W3e5AWnLnS/saoNOXV8fZmKHK2+U0w==">
+      <button type="submit" class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15 d-md-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
+        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
+        Sign out
+      </button>
+</form></nav>
+
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+        <a class="Header-link " href="https://github.com/" data-hotkey="g d" aria-label="Homepage " data-ga-click="Header, go to dashboard, icon:logo">
+  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+    </div>
+
+    <div class="Header-item mr-0 mr-md-3 flex-order-1 flex-md-order-none">
+        
+
+    <notification-indicator class="js-socket-channel" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NzMwODE1NzAiLCJ0IjoxNjEyODc2NTQwfQ==--8ed13657d521022cb3a179735033987b89bdca788873c53b11e7c4849ffdc468" data-catalyst="">
+      <a href="https://github.com/notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw" aria-label="You have no unread notifications" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-target="notification-indicator.link">
+         <span class="mail-status  " data-target="notification-indicator.modifier"></span>
+         <svg class="octicon octicon-bell" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
+      </a>
+    </notification-indicator>
+
+    </div>
+
+
+    <div class="Header-item position-relative d-none d-md-flex">
+        <details class="details-overlay details-reset">
+  <summary class="Header-link" aria-label="Create new…" data-ga-click="Header, create new, icon:add" aria-haspopup="menu" role="button">
+      <svg class="octicon octicon-plus" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.75 2a.75.75 0 01.75.75V7h4.25a.75.75 0 110 1.5H8.5v4.25a.75.75 0 11-1.5 0V8.5H2.75a.75.75 0 010-1.5H7V2.75A.75.75 0 017.75 2z"></path></svg> <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw" role="menu">
+    
+<a role="menuitem" class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="https://github.com/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div role="none" class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="bitnami/charts">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="https://github.com/bitnami/charts/issues/new/choose" data-ga-click="Header, create new issue" data-skip-pjax="">
+      New issue
+    </a>
+
+
+  </details-menu>
+</details>
+
+    </div>
+
+    <div class="Header-item position-relative mr-0 d-none d-md-flex">
+        
+  <details class="details-overlay details-reset js-feature-preview-indicator-container" data-feature-preview-indicator-src="/users/morozovav82/feature_preview/indicator_check">
+
+  <summary class="Header-link" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar" aria-haspopup="menu" role="button">
+    <img src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/73081570(1)" alt="@morozovav82" size="20" class="avatar avatar-user avatar--small " height="20" width="20">
+      <span class="feature-preview-indicator js-feature-preview-indicator" style="top: 1px;" hidden=""></span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw" style="width: 180px" src="/users/73081570/menu" preload="" role="menu">
+      <include-fragment>
+        <p class="text-center mt-3" data-hide-on-error="">
+          <svg viewBox="0 0 16 16" fill="none" style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke">
+    <animatetransform attributeName="transform" type="rotate" from="0 8 8" to="360 8 8" dur="1s" repeatCount="indefinite"></animatetransform>
+  </path>
+</svg>
+        </p>
+        <p class="ml-1 mb-2 mt-2 text-gray-dark" data-show-on-error="">
+          <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+          Sorry, something went wrong.
+        </p>
+      </include-fragment>
+  </details-menu>
+</details>
+
+    </div>
+</header>
+
+              
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+    <div data-pjax-replace="" id="js-flash-container">
+
+
+  <template class="js-flash-template"></template>
+</div>
+
+
+    
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="" data-discussion-hovercards-enabled="" data-issue-and-pr-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container="">
+      
+      
+
+        <div class="border-bottom shelf intro-shelf js-notice mb-0 pb-4">
+  <div class="width-full container">
+    <div class="width-full mx-auto shelf-content">
+      <h2 class="shelf-title">Learn Git and GitHub without any code!</h2>
+      <p class="shelf-lead">
+          Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+      </p>
+      <a class="btn btn-primary shelf-cta" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;READ_GUIDE&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="904779a67968e74ea03af3acda2023ceda654601dbfa658212f30d468a41ba07" href="https://guides.github.com/activities/hello-world/">Read the guide</a>
+    </div>
+    <!-- '"` --><!-- </textarea></xmp> --><form class="shelf-dismiss js-notice-dismiss" action="https://github.com/dashboard/dismiss_bootcamp" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="mbmADNAG1d9yzBFeZi01NHEzoykmsy6npGOvaZIoZo7+PHpre6j6dSGYfAKiINXTd2ybFW6t5z0byax0jIRi8Q==">
+      <button name="button" type="submit" class="mr-1 close-button tooltipped tooltipped-w" aria-label="Hide this notice forever" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;DISMISS_BANNER&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="fdaf1ebbff4631bf390575298c394d9f0aeb82b499978424da37850d3428130d">
+        <svg aria-label="Hide this notice forever" class="octicon octicon-x v-align-text-top" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+</button></form>  </div>
+</div>
+
+
+    
+
+
+
+
+
+
+  
+
+
+  <div class="bg-gray-light pt-3 hide-full-screen mb-5">
+
+      <div class="d-flex mb-3 px-3 px-md-4 px-lg-5">
+
+        <div class="flex-auto min-width-0 width-fit mr-3">
+            <h1 class=" d-flex flex-wrap flex-items-center break-word f3 text-normal">
+    <svg class="octicon octicon-repo text-gray mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+    <span class="author flex-self-stretch" itemprop="author">
+      <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/bitnami/hovercard" href="https://github.com/bitnami">bitnami</a>
+    </span>
+    <span class="mx-1 flex-self-stretch color-text-secondary">/</span>
+  <strong itemprop="name" class="mr-2 flex-self-stretch">
+    <a data-pjax="#js-repo-pjax-container" class="" href="https://github.com/bitnami/charts">charts</a>
+  </strong>
+  
+</h1>
+
+
+        </div>
+
+          <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
+
+  <li>
+          <notifications-list-subscription-form class="f5 position-relative d-flex" data-catalyst="">
+      <details class="details-reset details-overlay f5 position-relative" data-target="notifications-list-subscription-form.details" data-action="toggle:notifications-list-subscription-form#detailsToggled">
+
+      <summary class="btn btn-sm rounded-right-0" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="decbe581fe0a27c534a8ade712ff769427c8509af1471bcfe3de3efdf7d43d87" data-ga-click="Repository, click Watch settings, action:files#disambiguate" aria-label="Notifications settings" role="button" aria-haspopup="menu">
+          <span data-menu-button="">
+            <span hidden="" data-target="notifications-list-subscription-form.unwatchButtonCopy">
+              <svg class="octicon octicon-eye" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+              Unwatch
+            </span>
+            <span hidden="" data-target="notifications-list-subscription-form.stopIgnoringButtonCopy">
+              <svg class="octicon octicon-bell-slash" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5c-.997 0-1.895.416-2.534 1.086A.75.75 0 014.38 1.55 5 5 0 0113 5v2.373a.75.75 0 01-1.5 0V5A3.5 3.5 0 008 1.5zM4.182 4.31L1.19 2.143a.75.75 0 10-.88 1.214L3 5.305v2.642a.25.25 0 01-.042.139L1.255 10.64A1.518 1.518 0 002.518 13h11.108l1.184.857a.75.75 0 10.88-1.214l-1.375-.996a1.196 1.196 0 00-.013-.01L4.198 4.321a.733.733 0 00-.016-.011zm7.373 7.19L4.5 6.391v1.556c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01.015.015 0 00.005.012.017.017 0 00.006.004l.007.001h9.037zM8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path></svg>
+              Stop ignoring
+            </span>
+            <span data-target="notifications-list-subscription-form.watchButtonCopy">
+              <svg class="octicon octicon-eye" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+              Watch
+            </span>
+          </span>
+          <span class="dropdown-caret"></span>
+</summary>
+        <details-menu class="SelectMenu  " role="menu" data-target="notifications-list-subscription-form.menu">
+          <div class="SelectMenu-modal notifications-component-menu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Notifications</h3>
+              <button class="SelectMenu-closeButton" type="button" aria-label="Close menu" data-action="click:notifications-list-subscription-form#closeMenu">
+                <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+              </button>
+            </header>
+
+            <div class="SelectMenu-list">
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="https://github.com/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="6cawoXji0lepk9UKXQbkL5YF4T81p6hgks1ccFQz9uKtYqXkLsFh9f864i6qymGclTfldMBuvXy26Pu1J3rFlw==">
+
+                <input type="hidden" name="repository_id" value="52300938">
+
+                <button type="submit" name="do" value="included" class="SelectMenu-item flex-items-start" role="menuitemradio" aria-checked="true" data-targets="notifications-list-subscription-form.subscriptionButtons">
+                  <span class="f5">
+                    <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  </span>
+                  <div>
+                    <div class="f5 text-bold">
+                      Participating and @mentions
+                    </div>
+                    <div class="text-small text-gray text-normal pb-1">
+                      Only receive notifications from this repository when participating or @mentioned.
+                    </div>
+                  </div>
+                </button>
+
+                <button type="submit" name="do" value="subscribed" class="SelectMenu-item flex-items-start" role="menuitemradio" aria-checked="false" data-targets="notifications-list-subscription-form.subscriptionButtons">
+                  <span class="f5">
+                    <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  </span>
+                  <div>
+                    <div class="f5 text-bold">
+                      All Activity
+                    </div>
+                    <div class="text-small text-gray text-normal pb-1">
+                      Notified of all notifications on this repository.
+                    </div>
+                  </div>
+                </button>
+
+                <button type="submit" name="do" value="ignore" class="SelectMenu-item flex-items-start" role="menuitemradio" aria-checked="false" data-targets="notifications-list-subscription-form.subscriptionButtons">
+                  <span class="f5">
+                    <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  </span>
+                  <div>
+                    <div class="f5 text-bold">
+                      Ignore
+                    </div>
+                    <div class="text-small text-gray text-normal pb-1">
+                      Never be notified.
+                    </div>
+                  </div>
+                </button>
+</form>
+              <button class="SelectMenu-item flex-items-start pr-3" type="button" role="menuitemradio" data-target="notifications-list-subscription-form.customButton" data-action="click:notifications-list-subscription-form#openCustomDialog" aria-haspopup="true" aria-checked="false">
+                <span class="f5">
+                  <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                </span>
+                <div>
+                  <div class="d-flex flex-items-start flex-justify-between">
+                    <div class="f5 text-bold">Custom</div>
+                    <div class="f5 pr-1">
+                      <svg class="octicon octicon-arrow-right" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"></path></svg>
+                    </div>
+                  </div>
+                  <div class="text-small text-gray text-normal pb-1">
+                    Select events you want to be notified of in addition to participating and @mentions.
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </details-menu>
+
+        <details-dialog class="notifications-component-dialog " data-target="notifications-list-subscription-form.customDialog" hidden="" role="dialog" aria-modal="true">
+          <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="https://github.com/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="kR2ddogwM63Bp7DXqYO2UxbzM6srDJj0YnlHj2B2wfPVuYgz3hOAD5cOh/NeTzPgFcE34N7FjehGXOBKEz/yhg==">
+
+              <input type="hidden" name="repository_id" value="52300938">
+
+              <header class="d-sm-none SelectMenu-header pb-0 border-bottom-0 px-2 px-sm-3">
+                <h1 class="f3 SelectMenu-title d-inline-flex">
+                  <button class="bg-white border-0 px-2 py-0 m-0 link-gray f5" aria-label="Return to menu" type="button" data-action="click:notifications-list-subscription-form#closeCustomDialog">
+                    <svg style="" class="octicon octicon-arrow-left" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg>
+                  </button>
+                  Custom
+                </h1>
+              </header>
+
+              <header class="d-none d-sm-flex flex-items-start pt-1">
+                <button class="border-0 px-2 pt-1 m-0 link-gray f5" style="background-color: transparent;" aria-label="Return to menu" type="button" data-action="click:notifications-list-subscription-form#closeCustomDialog">
+                  <svg style="position: relative; left: 2px; top: 1px" class="octicon octicon-arrow-left" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path></svg>
+                </button>
+
+                <h1 class="pt-1 pr-4 pb-0 pl-0 f5 text-bold">
+                  Custom
+                </h1>
+              </header>
+
+              <fieldset>
+                <legend>
+                  <div class="text-small text-gray pt-0 pr-3 pb-3 pl-6 pl-sm-5 border-bottom mb-3">
+                    Select events you want to be notified of in addition to participating and @mentions.
+                  </div>
+                </legend>
+                  <div class="form-checkbox mr-3 ml-6 ml-sm-5 mb-2 mt-0">
+                    <label class="f5 text-normal">
+                      <input type="checkbox" name="thread_types[]" value="Issue" data-targets="notifications-list-subscription-form.threadTypeCheckboxes" data-action="change:notifications-list-subscription-form#threadTypeCheckboxesUpdated">
+                      Issues
+                    </label>
+
+                  </div>
+                  <div class="form-checkbox mr-3 ml-6 ml-sm-5 mb-2 mt-0">
+                    <label class="f5 text-normal">
+                      <input type="checkbox" name="thread_types[]" value="PullRequest" data-targets="notifications-list-subscription-form.threadTypeCheckboxes" data-action="change:notifications-list-subscription-form#threadTypeCheckboxesUpdated">
+                      Pull requests
+                    </label>
+
+                  </div>
+                  <div class="form-checkbox mr-3 ml-6 ml-sm-5 mb-2 mt-0">
+                    <label class="f5 text-normal">
+                      <input type="checkbox" name="thread_types[]" value="Release" data-targets="notifications-list-subscription-form.threadTypeCheckboxes" data-action="change:notifications-list-subscription-form#threadTypeCheckboxesUpdated">
+                      Releases
+                    </label>
+
+                  </div>
+                  <div class="form-checkbox mr-3 ml-6 ml-sm-5 mb-2 mt-0">
+                    <label class="f5 text-normal">
+                      <input type="checkbox" name="thread_types[]" value="Discussion" data-targets="notifications-list-subscription-form.threadTypeCheckboxes" data-action="change:notifications-list-subscription-form#threadTypeCheckboxesUpdated">
+                      Discussions
+                    </label>
+
+                      <span class="tooltipped tooltipped-nw mr-2 p-1 float-right" aria-label="Discussions are not enabled for this repo">
+                        <svg style="fill: var(--color-icon-tertiary)" class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                      </span>
+                  </div>
+              </fieldset>
+              <div class="pt-2 pb-3 px-3 d-flex flex-justify-start flex-row-reverse">
+                <button type="submit" name="do" value="custom" class="btn btn-sm btn-primary ml-2" data-target="notifications-list-subscription-form.customSubmit" disabled="">Apply</button>
+
+                <button class="btn btn-sm" type="button" data-action="click:notifications-list-subscription-form#resetForm" data-close-dialog="">Cancel</button>
+              </div>
+</form>          </div>
+        </details-dialog>
+        <div class="notifications-component-dialog-overlay"></div>
+      </details>
+        <a class="social-count" href="https://github.com/bitnami/charts/watchers" aria-label="73 users are watching this repository" data-target="notifications-list-subscription-form.socialCount">
+          73
+        </a>
+    </notifications-list-subscription-form>
+
+  </li>
+
+  <li>
+        <div class="d-block js-toggler-container js-social-container starring-container ">
+    <form class="starred js-social-form" action="https://github.com/bitnami/charts/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="c2dNT8jTWLcn3jBjCvRodCxv+z+jRxxLgR99u6wa9MpfjSOWFeCgTko2GjJSuINtUad/+7nMq+FW2ZW7RvvaPg==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar bitnami/charts" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="6881c5f9a247e5ea99a5237eeea1524d5afc8e520e3f33606c6682480aed0065" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">        <svg class="octicon octicon-star-fill mr-1" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+        <span>
+          Unstar
+</span></button>        <a class="social-count js-social-count" href="https://github.com/bitnami/charts/stargazers" aria-label="2657 users starred this repository">
+           2.7k
+        </a>
+</form>
+    <form class="unstarred js-social-form" action="https://github.com/bitnami/charts/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="xmezToOPVPqXpEZtcVJcNj0UdqsDfS7VYNfEpoQziIBx3Sta+yG1WYUoRenbHXgPWaX93gfVxBm25UylynOwqg==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star bitnami/charts" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="69a42270cbafcdd5fd4243d2d901f8eb9da771e452e9070a28e3570aee29a050" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">        <svg class="octicon octicon-star mr-1" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+        <span>
+          Star
+</span></button>        <a class="social-count js-social-count" href="https://github.com/bitnami/charts/stargazers" aria-label="2657 users starred this repository">
+          2.7k
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+            <!-- '"` --><!-- </textarea></xmp> --><form class="btn-with-count" action="https://github.com/bitnami/charts/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ntpv4GFadXt8fNn7exSPDSs0450GRk0Yfnj7dCnjXBGL4DGqd8Qf0DGCgJcMiQFZIGf016+7sK3dO8RuNEFoSQ==">
+              <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="fcc3f915b91b23037703b58046b21b24e5368de0f418ff890f9eaa847586c564" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork" type="submit" title="Fork your own copy of bitnami/charts to your account" aria-label="Fork your own copy of bitnami/charts to your account">                <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
+                Fork
+</button></form>
+      <a href="https://github.com/bitnami/charts/network/members" class="social-count" aria-label="2645 users forked this repository">
+        2.6k
+      </a>
+  </li>
+</ul>
+
+      </div>
+        
+<nav aria-label="Repository" data-pjax="#js-repo-pjax-container" class="js-repo-nav js-sidenav-container-pjax js-responsive-underlinenav overflow-hidden UnderlineNav px-3 px-md-4 px-lg-5 bg-gray-light">
+  <ul class="UnderlineNav-body list-style-none ">
+          <li class="d-flex">
+        <a class="js-selected-navigation-item selected UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i0code-tab" data-hotkey="g c" data-ga-click="Repository, Navigation click, Code tab" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages repo_deployments /bitnami/charts" href="https://github.com/bitnami/charts">
+              <svg class="octicon octicon-code UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
+            <span data-content="Code">Code</span>
+              <span title="Not available" class="Counter "></span>
+</a>
+
+      </li>
+      <li class="d-flex">
+        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i1issues-tab" data-hotkey="g i" data-ga-click="Repository, Navigation click, Issues tab" data-selected-links="repo_issues repo_labels repo_milestones /bitnami/charts/issues" href="https://github.com/bitnami/charts/issues">
+              <svg class="octicon octicon-issue-opened UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"></path></svg>
+            <span data-content="Issues">Issues</span>
+              <span title="284" class="Counter ">284</span>
+</a>
+
+      </li>
+      <li class="d-flex">
+        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i2pull-requests-tab" data-hotkey="g p" data-ga-click="Repository, Navigation click, Pull requests tab" data-selected-links="repo_pulls checks /bitnami/charts/pulls" href="https://github.com/bitnami/charts/pulls">
+              <svg class="octicon octicon-git-pull-request UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path></svg>
+            <span data-content="Pull requests">Pull requests</span>
+              <span title="38" class="Counter ">38</span>
+</a>
+
+      </li>
+      <li class="d-flex">
+        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i3actions-tab" data-hotkey="g a" data-ga-click="Repository, Navigation click, Actions tab" data-selected-links="repo_actions /bitnami/charts/actions" href="https://github.com/bitnami/charts/actions">
+              <svg class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
+            <span data-content="Actions">Actions</span>
+              <span title="Not available" class="Counter "></span>
+</a>
+
+      </li>
+      <li class="d-flex">
+        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i4security-tab" data-hotkey="g s" data-ga-click="Repository, Navigation click, Security tab" data-selected-links="security overview alerts policy token_scanning code_scanning /bitnami/charts/security" href="https://github.com/bitnami/charts/security">
+              <svg class="octicon octicon-shield UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.467.133a1.75 1.75 0 011.066 0l5.25 1.68A1.75 1.75 0 0115 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.7 1.7 0 01-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 011.217-1.667l5.25-1.68zm.61 1.429a.25.25 0 00-.153 0l-5.25 1.68a.25.25 0 00-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.2.2 0 00.154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.25.25 0 00-.174-.237l-5.25-1.68zM9 10.5a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.75a.75.75 0 10-1.5 0v3a.75.75 0 001.5 0v-3z"></path></svg>
+            <span data-content="Security">Security</span>
+              
+</a>
+
+      </li>
+      <li class="d-flex">
+        <a class="js-selected-navigation-item UnderlineNav-item hx_underlinenav-item no-wrap js-responsive-underlinenav-item" data-tab-item="i5insights-tab" data-ga-click="Repository, Navigation click, Insights tab" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people /bitnami/charts/pulse" href="https://github.com/bitnami/charts/pulse">
+              <svg class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path></svg>
+            <span data-content="Insights">Insights</span>
+              <span title="Not available" class="Counter "></span>
+</a>
+
+      </li>
+
+</ul>        <div class="position-absolute right-0 pr-3 pr-md-4 pr-lg-5 js-responsive-underlinenav-overflow" style="visibility:hidden;">
+      <details class="details-overlay details-reset position-relative">
+  <summary role="button">
+    <div class="UnderlineNav-item mr-0 border-0">
+            <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+            <span class="sr-only">More</span>
+          </div>
+</summary>  <div>
+    <details-menu role="menu" class="dropdown-menu dropdown-menu-sw ">
+  
+            <ul>
+                <li data-menu-item="i0code-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /bitnami/charts" href="https://github.com/bitnami/charts">
+                    Code
+</a>                </li>
+                <li data-menu-item="i1issues-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /bitnami/charts/issues" href="https://github.com/bitnami/charts/issues">
+                    Issues
+</a>                </li>
+                <li data-menu-item="i2pull-requests-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /bitnami/charts/pulls" href="https://github.com/bitnami/charts/pulls">
+                    Pull requests
+</a>                </li>
+                <li data-menu-item="i3actions-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /bitnami/charts/actions" href="https://github.com/bitnami/charts/actions">
+                    Actions
+</a>                </li>
+                <li data-menu-item="i4security-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /bitnami/charts/security" href="https://github.com/bitnami/charts/security">
+                    Security
+</a>                </li>
+                <li data-menu-item="i5insights-tab" hidden="">
+                  <a role="menuitem" class="js-selected-navigation-item dropdown-item" data-selected-links=" /bitnami/charts/pulse" href="https://github.com/bitnami/charts/pulse">
+                    Insights
+</a>                </li>
+            </ul>
+
+</details-menu>
+</div></details>    </div>
+
+</nav>
+  </div>
+
+
+<div class="container-xl clearfix new-discussion-timeline px-3 px-md-4 px-lg-5">
+  <div id="repo-content-pjax-container" class="repository-content ">
+
+    
+      
+    <div>
+  <div class="file-navigation mb-3 d-flex flex-items-start">
+    
+<div class="position-relative">
+  <details class="details-reset details-overlay mr-0 mb-0 " id="branch-select-menu">
+    <summary class="btn css-truncate" data-hotkey="w" title="Switch branches or tags" aria-haspopup="menu" role="button">
+      <svg class="octicon octicon-git-branch text-gray" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg>
+      <span class="css-truncate-target" data-menu-button="">master</span>
+      <span class="dropdown-caret"></span>
+    </summary>
+
+      <details-menu class="SelectMenu SelectMenu--hasFilter" src="/bitnami/charts/refs/master/bitnami/rabbitmq?source_action=disambiguate&amp;source_controller=files" preload="" role="menu">
+        <div class="SelectMenu-modal">
+          <include-fragment class="SelectMenu-loading" aria-label="Menu is loading">
+            <svg class="octicon octicon-octoface anim-pulse" height="32" viewBox="0 0 24 24" version="1.1" width="32" aria-hidden="true"><path d="M7.75 11c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5C9 11.56 8.44 11 7.75 11zm1.27 4.5a.469.469 0 01.48-.5h5a.47.47 0 01.48.5c-.116 1.316-.759 2.5-2.98 2.5s-2.864-1.184-2.98-2.5zm7.23-4.5c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5c0-.69-.56-1.25-1.25-1.25z"></path><path fill-rule="evenodd" d="M21.255 3.82a1.725 1.725 0 00-2.141-1.195c-.557.16-1.406.44-2.264.866-.78.386-1.647.93-2.293 1.677A18.442 18.442 0 0012 5c-.93 0-1.784.059-2.569.17-.645-.74-1.505-1.28-2.28-1.664a13.876 13.876 0 00-2.265-.866 1.725 1.725 0 00-2.141 1.196 23.645 23.645 0 00-.69 3.292c-.125.97-.191 2.07-.066 3.112C1.254 11.882 1 13.734 1 15.527 1 19.915 3.13 23 12 23c8.87 0 11-3.053 11-7.473 0-1.794-.255-3.647-.99-5.29.127-1.046.06-2.15-.066-3.125a23.652 23.652 0 00-.689-3.292zM20.5 14c.5 3.5-1.5 6.5-8.5 6.5s-9-3-8.5-6.5c.583-4 3-6 8.5-6s7.928 2 8.5 6z"></path></svg>
+          </include-fragment>
+        </div>
+      </details-menu>
+  </details>
+
+</div>
+
+
+    <div class="flex-1 mx-2 flex-self-center f4">
+      <div class="d-none d-sm-block">
+        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="https://github.com/bitnami/charts"><span>charts</span></a></span></span><span class="mx-1">/</span><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="https://github.com/bitnami/charts/tree/master/bitnami"><span>bitnami</span></a></span><span class="mx-1">/</span><strong class="final-path">rabbitmq</strong><span class="mx-1">/</span>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <a class="btn mr-2 d-none d-md-block" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="c9b4dd5630bf024fa2f2d378dff99bc44127bbc206d74bac51d13bdb16709b28" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="https://github.com/bitnami/charts/find/master">
+        Go to file
+</a>
+        <details class="details-overlay details-reset position-relative">
+  <summary role="button">
+    <span class="btn d-none d-md-flex flex-items-center">
+              Add file
+              <span class="dropdown-caret ml-1"></span>
+            </span>
+            <span class="btn d-inline-block d-md-none">
+              <svg aria-label="More options" class="octicon octicon-kebab-horizontal" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+            </span>
+</summary>  <div>
+    <ul class="dropdown-menu dropdown-menu-sw">
+              <li class="d-block d-md-none">
+                <a class="dropdown-item" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:52300938,&quot;originating_url&quot;:&quot;https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq&quot;,&quot;user_id&quot;:73081570}}" data-hydro-click-hmac="c9b4dd5630bf024fa2f2d378dff99bc44127bbc206d74bac51d13bdb16709b28" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="https://github.com/bitnami/charts/find/master">
+                  Go to file
+</a>              </li>
+                <li class="d-block d-md-none dropdown-divider" role="none"></li>
+                <li><!-- '"` --><!-- </textarea></xmp> --><form action="https://github.com/bitnami/charts/new/master/bitnami/rabbitmq" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="EGzL+s7M0p71q+3rZPHXJ/2QpR9wD1qnnJR0LMITLZJmMuQgVi68b6m4mL2w6QOqhGb6d0BPN3kQYdRd48OMCg==">
+  <button class="dropdown-item btn-link" type="submit">
+    Create new file
+  </button>
+</form></li>
+
+                <li><a href="https://github.com/bitnami/charts/upload/master/bitnami/rabbitmq" class="dropdown-item">
+  Upload files
+</a></li>
+
+                <li class="d-block d-md-none dropdown-divider" role="none"></li>
+                <li class="d-block d-md-none">
+                  <!-- '"` --><!-- </textarea></xmp> --><form action="https://github.com/bitnami/charts/tree/delete/master/bitnami/rabbitmq" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="7oJoh2yMivg32uigiZcrLT86VC1bYWsu4XGb7KnI/Wk98ftbp6orUqGeD1o5dQSFCOkW8y/q0gECzcRmHWF2gQ==">
+  <button class="dropdown-item menu-item-danger btn-link" type="submit">
+    Delete directory
+  </button>
+</form>
+                </li>
+            </ul>
+</div></details>
+          <details class="details-overlay details-reset position-relative">
+  <summary role="button" type="button" class="btn d-none d-md-block ml-md-2">
+    <svg aria-label="More options" class="octicon octicon-kebab-horizontal" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+</summary>  <div>
+    <ul class="dropdown-menu dropdown-menu-sw">
+                <li class="d-none d-md-block">
+                  <!-- '"` --><!-- </textarea></xmp> --><form action="https://github.com/bitnami/charts/tree/delete/master/bitnami/rabbitmq" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="AY3l6wFNd1pPim9VpnHRmzImBn7SvmSMv+PJigz9to/S/nY3ymvW8NnOiK8Wk/4zBfVEoKY13aNcX5YAuFQ9Zw==">
+  <button class="dropdown-item menu-item-danger btn-link" type="submit">
+    Delete directory
+  </button>
+</form>
+                </li>
+              </ul>
+</div></details>    </div>
+  </div>
+
+  <div class="f4 mt-3 mb-3 d-sm-none"><span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="https://github.com/bitnami/charts"><span>charts</span></a></span></span><span class="mx-1">/</span><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="https://github.com/bitnami/charts/tree/master/bitnami"><span>bitnami</span></a></span><span class="mx-1">/</span><strong class="final-path">rabbitmq</strong><span class="separator mx-1">/</span></div>
+
+  
+
+<div class="Box mb-3">
+  <div class="Box-header Box-header--blue position-relative">
+    <h2 class="sr-only">Latest commit</h2>
+    <div class="js-details-container Details d-flex rounded-top-1 flex-items-center flex-wrap" data-issue-and-pr-hovercards-enabled="">
+      
+  <div class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1 hx_avatar_stack_commit">
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="andresbono">
+        <a class="avatar avatar-user" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/andresbono/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" style="width:24px;height:24px;" href="https://github.com/andresbono">
+          <img height="24" width="24" alt="@andresbono" src="./charts_bitnami_rabbitmq at master · bitnami_charts_files/1057973" class=" avatar-user">
+</a>  </div>
+</div>
+
+  </div>
+  <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+    <div class="css-truncate css-truncate-overflow text-gray">
+      
+      <a href="https://github.com/bitnami/charts/commits?author=andresbono" class="commit-author user-mention" title="View all commits by andresbono">andresbono</a>
+
+
+  
+
+        <span class="d-none d-sm-inline">
+          <a data-pjax="true" title="[bitnami/rabbitmq] Add comment in ingress.path value (#5379)
+
+* Update values.yaml
+
+* Update Chart.yaml" class="link-gray-dark" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">[bitnami/rabbitmq] Add comment in ingress.path value (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="799556152" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/5379" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/5379/hovercard" href="https://github.com/bitnami/charts/pull/5379">#5379</a><a data-pjax="true" title="[bitnami/rabbitmq] Add comment in ingress.path value (#5379)
+
+* Update values.yaml
+
+* Update Chart.yaml" class="link-gray-dark" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">)</a>
+        </span>
+    </div>
+    <span class="hidden-text-expander ml-2 d-inline-block ">
+      <button type="button" class="hx_bg-black-fade-15 text-gray-dark ellipsis-expander js-details-target" aria-expanded="false">…</button>
+    </span>
+    <div class="d-flex flex-auto flex-justify-end ml-3 flex-items-baseline">
+        
+      <a href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129" class="f6 link-gray text-mono ml-2 d-none d-lg-inline" data-pjax="">ce2f21d</a>
+      <a href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129" class="link-gray ml-2" data-pjax="">
+        <relative-time datetime="2021-02-03T07:45:53Z" class="no-wrap" title="3 февр. 2021 г., 10:45 GMT+3">6 days ago</relative-time>
+      </a>
+    </div>
+  </div>
+  <div class="pl-0 pl-md-5 flex-order-1 width-full Details-content--hidden">
+      <div class="mt-2">
+        <a data-pjax="true" class="link-gray-dark text-bold" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">[bitnami/rabbitmq] Add comment in ingress.path value (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="799556152" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/5379" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/5379/hovercard" href="https://github.com/bitnami/charts/pull/5379">#5379</a><a data-pjax="true" class="link-gray-dark text-bold" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">)</a>
+      </div>
+
+      <pre class="mt-2 text-mono text-gray text-small ws-pre-wrap">* Update values.yaml
+
+* Update Chart.yaml</pre>
+    <div class="d-flex flex-items-center">
+      <span class="text-gray-dark text-mono d-lg-none hx_bg-black-fade-15 px-1 rounded-1 text-small mt-2">ce2f21d</span>
+    </div>
+  </div>
+      <div class="flex-shrink-0">
+        <h2 class="sr-only">Git stats</h2>
+        <ul class="list-style-none d-flex">
+          <li class="ml-0 ml-md-3">
+            <a data-pjax="" href="https://github.com/bitnami/charts/commits/master/bitnami/rabbitmq" class="pl-3 pr-3 py-3 p-md-0 mt-n3 mb-n3 mr-n3 m-md-0 link-gray-dark no-underline no-wrap">
+              <svg class="octicon octicon-history text-gray" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg>
+              <span class="d-none d-sm-inline">
+                  <strong>History</strong>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h2 id="files" class="sr-only">Files</h2>
+  
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/bitnami/charts/tree/e99716a3b2dac3321edc2ff409e0404f186d9333/bitnami/rabbitmq">Permalink</a>
+
+  <div class="include-fragment-error flash flash-error flash-full py-2">
+  <svg class="octicon octicon-alert" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+  
+    Failed to load latest commit information.
+
+</div>  <div class="js-details-container Details">
+    <div role="grid" aria-labelledby="files" class="Details-content--hidden-not-important js-navigation-container js-active-navigation-container d-block" data-pjax="">
+      <div class="sr-only" role="row">
+        <div role="columnheader">Type</div>
+        <div role="columnheader">Name</div>
+        <div role="columnheader" class="d-none d-md-block">Latest commit message</div>
+        <div role="columnheader">Commit time</div>
+      </div>
+        <div role="row" class="Box-row Box-row--focus-gray p-0 d-flex js-navigation-item">
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2">
+            <a rel="nofollow" title="Go to parent directory" class="js-navigation-open d-block py-2 px-3" href="https://github.com/bitnami/charts/tree/master/bitnami">
+              <span class="text-bold text-center d-inline-block" style="min-width: 16px;">. .</span>
+</a>          </div>
+          <div role="gridcell" class="d-none d-md-block"></div>
+          <div role="gridcell"></div>
+        </div>
+
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" class="octicon octicon-file-directory text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="ci" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq/ci">ci</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="[bitnami/*] Update CI *-values.yaml files (#4674)
+
+* Update CI *-values.yaml files
+* Bump charts version" class="link-gray" href="https://github.com/bitnami/charts/commit/b473fa98f79cb1b06bf592cfe8495c92a6fda16b">[bitnami/*] Update CI *-values.yaml files (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="760998514" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/4674" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/4674/hovercard" href="https://github.com/bitnami/charts/pull/4674">#4674</a><a data-pjax="true" title="[bitnami/*] Update CI *-values.yaml files (#4674)
+
+* Update CI *-values.yaml files
+* Bump charts version" class="link-gray" href="https://github.com/bitnami/charts/commit/b473fa98f79cb1b06bf592cfe8495c92a6fda16b">)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2020-12-10T11:36:03Z" class="no-wrap" title="10 дек. 2020 г., 14:36 GMT+3">2 months ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" class="octicon octicon-file-directory text-color-icon-directory" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="templates" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq/templates">templates</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="Fix template evaluation of podAnnotations (#5299)" class="link-gray" href="https://github.com/bitnami/charts/commit/8745e16bf0bfbdaf8f1921092cde4cdd8d45c2b3">Fix template evaluation of podAnnotations (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="795939137" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/5299" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/5299/hovercard" href="https://github.com/bitnami/charts/pull/5299">#5299</a><a data-pjax="true" title="Fix template evaluation of podAnnotations (#5299)" class="link-gray" href="https://github.com/bitnami/charts/commit/8745e16bf0bfbdaf8f1921092cde4cdd8d45c2b3">)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2021-01-29T14:48:40Z" class="no-wrap" title="29 янв. 2021 г., 17:48 GMT+3">11 days ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" class="octicon octicon-file text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title=".helmignore" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/.helmignore">.helmignore</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="Move charts from upstreamed folder to bitnami (#2032)
+
+* Move charts from upstreamed folder to bitnami
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Remove root .helmignore
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Bump charts version
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Remove file added by error
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Update Chart.yaml" class="link-gray" href="https://github.com/bitnami/charts/commit/a0e44f7d6a10b8b5643186130ea420887cb72c7c">Move charts from upstreamed folder to bitnami (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="579302766" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/2032" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/2032/hovercard" href="https://github.com/bitnami/charts/pull/2032">#2032</a><a data-pjax="true" title="Move charts from upstreamed folder to bitnami (#2032)
+
+* Move charts from upstreamed folder to bitnami
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Remove root .helmignore
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Bump charts version
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Remove file added by error
+
+Signed-off-by: Carlos Rodriguez Hernandez &lt;crhernandez@bitnami.com&gt;
+
+* Update Chart.yaml" class="link-gray" href="https://github.com/bitnami/charts/commit/a0e44f7d6a10b8b5643186130ea420887cb72c7c">)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2020-03-11T16:11:37Z" class="no-wrap" title="11 мар. 2020 г., 19:11 GMT+3">11 months ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" class="octicon octicon-file text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="Chart.lock" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/Chart.lock">Chart.lock</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="[bitnami/rabbitmq] Release 8.7.5 updating components versions
+
+Signed-off-by: Bitnami Containers &lt;containers@bitnami.com&gt;" class="link-gray" href="https://github.com/bitnami/charts/commit/a3b6935910d9d9fdca581911ee064cbdb81d4357">[bitnami/rabbitmq] Release 8.7.5 updating components versions</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2021-01-25T08:35:57Z" class="no-wrap" title="25 янв. 2021 г., 11:35 GMT+3">15 days ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" class="octicon octicon-file text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="Chart.yaml" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/Chart.yaml">Chart.yaml</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="[bitnami/rabbitmq] Add comment in ingress.path value (#5379)
+
+* Update values.yaml
+
+* Update Chart.yaml" class="link-gray" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">[bitnami/rabbitmq] Add comment in ingress.path value (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="799556152" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/5379" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/5379/hovercard" href="https://github.com/bitnami/charts/pull/5379">#5379</a><a data-pjax="true" title="[bitnami/rabbitmq] Add comment in ingress.path value (#5379)
+
+* Update values.yaml
+
+* Update Chart.yaml" class="link-gray" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2021-02-03T07:45:53Z" class="no-wrap" title="3 февр. 2021 г., 10:45 GMT+3">6 days ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" class="octicon octicon-file text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="README.md" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/README.md">README.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="[bitnami/rabbitmq] Add hostAliases (#5304)" class="link-gray" href="https://github.com/bitnami/charts/commit/f8ffed1d6b7d9dbaa4e186674622a4abab5f053a">[bitnami/rabbitmq] Add hostAliases (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="795972359" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/5304" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/5304/hovercard" href="https://github.com/bitnami/charts/pull/5304">#5304</a><a data-pjax="true" title="[bitnami/rabbitmq] Add hostAliases (#5304)" class="link-gray" href="https://github.com/bitnami/charts/commit/f8ffed1d6b7d9dbaa4e186674622a4abab5f053a">)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2021-01-28T13:35:46Z" class="no-wrap" title="28 янв. 2021 г., 16:35 GMT+3">12 days ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" class="octicon octicon-file text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="values.schema.json" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/values.schema.json">values.schema.json</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="[multiple charts] Update hidden properties in the different JSON schemas (#2871)
+
+* Update hidden properties in the different JSON schemas
+
+* Add missing paths" class="link-gray" href="https://github.com/bitnami/charts/commit/4cff6ba8b0013b6dc368a1e7986c393e8447e75b">[multiple charts] Update hidden properties in the different JSON sche…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2020-06-18T13:47:03Z" class="no-wrap" title="18 июн. 2020 г., 16:47 GMT+3">8 months ago</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item navigation-focus">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" class="octicon octicon-file text-gray-light" height="16" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path></svg>
+
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open link-gray-dark" title="values.yaml" data-pjax="#repo-content-pjax-container" href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/values.yaml">values.yaml</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
+              <span class="css-truncate css-truncate-target d-block width-fit">
+                    <a data-pjax="true" title="[bitnami/rabbitmq] Add comment in ingress.path value (#5379)
+
+* Update values.yaml
+
+* Update Chart.yaml" class="link-gray" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">[bitnami/rabbitmq] Add comment in ingress.path value (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="799556152" data-permission-text="Title is private" data-url="https://github.com/bitnami/charts/issues/5379" data-hovercard-type="pull_request" data-hovercard-url="/bitnami/charts/pull/5379/hovercard" href="https://github.com/bitnami/charts/pull/5379">#5379</a><a data-pjax="true" title="[bitnami/rabbitmq] Add comment in ingress.path value (#5379)
+
+* Update values.yaml
+
+* Update Chart.yaml" class="link-gray" href="https://github.com/bitnami/charts/commit/ce2f21db6c95923004145da5e98b123a6a798129">)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="text-gray-light text-right" style="width:100px;">
+              <time-ago datetime="2021-02-03T07:45:53Z" class="no-wrap" title="3 февр. 2021 г., 10:45 GMT+3">6 days ago</time-ago>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+  <div id="readme" class="Box md js-code-block-container Box--responsive">
+    <div class="Box-header d-flex flex-items-center flex-justify-between bg-white border-bottom-0">
+      <h2 class="Box-title pr-3">
+        README.md
+      </h2>
+    </div>
+      <div class="Box-body px-5 pb-5">
+        <article class="markdown-body entry-content container-lg" itemprop="text"><h1><a id="user-content-rabbitmq" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#rabbitmq"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>RabbitMQ</h1>
+<p><a href="https://www.rabbitmq.com/" rel="nofollow">RabbitMQ</a> is an open source message broker software that implements the Advanced Message Queuing Protocol (AMQP).</p>
+<h2><a id="user-content-tldr" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#tldr"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>TL;DR</h2>
+<div class="highlight highlight-source-shell"><pre>$ helm repo add bitnami https://charts.bitnami.com/bitnami
+$ helm install my-release bitnami/rabbitmq</pre></div>
+<h2><a id="user-content-introduction" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#introduction"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Introduction</h2>
+<p>This chart bootstraps a <a href="https://github.com/bitnami/bitnami-docker-rabbitmq">RabbitMQ</a> deployment on a <a href="http://kubernetes.io/" rel="nofollow">Kubernetes</a> cluster using the <a href="https://helm.sh/" rel="nofollow">Helm</a> package manager.</p>
+<p>Bitnami charts can be used with <a href="https://kubeapps.com/" rel="nofollow">Kubeapps</a> for deployment and management of Helm Charts in clusters. This chart has been tested to work with NGINX Ingress, cert-manager, fluentd and Prometheus on top of the <a href="https://kubeprod.io/" rel="nofollow">BKPR</a>.</p>
+<h2><a id="user-content-prerequisites" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Prerequisites</h2>
+<ul>
+<li>Kubernetes 1.12+</li>
+<li>Helm 3.1.0</li>
+<li>PV provisioner support in the underlying infrastructure</li>
+</ul>
+<h2><a id="user-content-installing-the-chart" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#installing-the-chart"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Installing the Chart</h2>
+<p>To install the chart with the release name <code>my-release</code>:</p>
+<div class="highlight highlight-source-shell"><pre>$ helm install my-release bitnami/rabbitmq</pre></div>
+<p>The command deploys RabbitMQ on the Kubernetes cluster in the default configuration. The <a href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#parameters">Parameters</a> section lists the parameters that can be configured during installation.</p>
+<blockquote>
+<p><strong>Tip</strong>: List all releases using <code>helm list</code></p>
+</blockquote>
+<h2><a id="user-content-uninstalling-the-chart" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#uninstalling-the-chart"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Uninstalling the Chart</h2>
+<p>To uninstall/delete the <code>my-release</code> deployment:</p>
+<div class="highlight highlight-source-shell"><pre>$ helm delete my-release</pre></div>
+<p>The command removes all the Kubernetes components associated with the chart and deletes the release.</p>
+<h2><a id="user-content-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Parameters</h2>
+<p>The following table lists the configurable parameters of the RabbitMQ chart and their default values.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>global.imageRegistry</code></td>
+<td>Global Docker image registry</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>global.imagePullSecrets</code></td>
+<td>Global Docker registry secret names as an array</td>
+<td><code>[]</code> (does not add image pull secrets to deployed pods)</td>
+</tr>
+<tr>
+<td><code>global.storageClass</code></td>
+<td>Global storage class for dynamic provisioning</td>
+<td><code>nil</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-common-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#common-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Common parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nameOverride</code></td>
+<td>String to partially override rabbitmq.fullname</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>fullnameOverride</code></td>
+<td>String to fully override rabbitmq.fullname</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>clusterDomain</code></td>
+<td>Default Kubernetes cluster domain</td>
+<td><code>cluster.local</code></td>
+</tr>
+<tr>
+<td><code>kubeVersion</code></td>
+<td>Force target Kubernetes version (using Helm capabilities if not set)</td>
+<td><code>nil</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-rabbitmq-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#rabbitmq-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>RabbitMQ parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image.registry</code></td>
+<td>RabbitMQ image registry</td>
+<td><code>docker.io</code></td>
+</tr>
+<tr>
+<td><code>image.repository</code></td>
+<td>RabbitMQ image name</td>
+<td><code>bitnami/rabbitmq</code></td>
+</tr>
+<tr>
+<td><code>image.tag</code></td>
+<td>RabbitMQ image tag</td>
+<td><code>{TAG_NAME}</code></td>
+</tr>
+<tr>
+<td><code>image.pullPolicy</code></td>
+<td>RabbitMQ image pull policy</td>
+<td><code>IfNotPresent</code></td>
+</tr>
+<tr>
+<td><code>image.pullSecrets</code></td>
+<td>Specify docker-registry secret names as an array</td>
+<td><code>[]</code> (does not add image pull secrets to deployed pods)</td>
+</tr>
+<tr>
+<td><code>image.debug</code></td>
+<td>Set to true if you would like to see extra information on logs</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>auth.username</code></td>
+<td>RabbitMQ application username</td>
+<td><code>user</code></td>
+</tr>
+<tr>
+<td><code>auth.password</code></td>
+<td>RabbitMQ application password</td>
+<td><em>random 10 character long alphanumeric string</em></td>
+</tr>
+<tr>
+<td><code>auth.existingPasswordSecret</code></td>
+<td>Existing secret with RabbitMQ credentials (must contain a value for <code>rabbitmq-password</code> key)</td>
+<td><code>nil</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>auth.erlangCookie</code></td>
+<td>Erlang cookie</td>
+<td><em>random 32 character long alphanumeric string</em></td>
+</tr>
+<tr>
+<td><code>auth.existingErlangSecret</code></td>
+<td>Existing secret with RabbitMQ Erlang cookie (must contain a value for <code>rabbitmq-erlang-cookie</code> key)</td>
+<td><code>nil</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>auth.tls.enabled</code></td>
+<td>Enable TLS support on RabbitMQ</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.failIfNoPeerCert</code></td>
+<td>When set to true, TLS connection will be rejected if client fails to provide a certificate</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.sslOptionsVerify</code></td>
+<td>Should <a href="https://www.rabbitmq.com/ssl.html#peer-verification" rel="nofollow">peer verification</a> be enabled?</td>
+<td><code>verify_peer</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.caCertificate</code></td>
+<td>Certificate Authority (CA) bundle content</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.serverCertificate</code></td>
+<td>Server certificate content</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.serverKey</code></td>
+<td>Server private key content</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.existingSecret</code></td>
+<td>Existing secret with certificate content to RabbitMQ credentials</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>auth.tls.existingSecretFullChain</code></td>
+<td>Whether or not the existing secret contains the full chain in the certificate (<code>tls.crt</code>). Will be used in place of <code>ca.cert</code> if <code>true</code>.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>logs</code></td>
+<td>Path of the RabbitMQ server's Erlang log file</td>
+<td><code>-</code></td>
+</tr>
+<tr>
+<td><code>ulimitNofiles</code></td>
+<td>Max File Descriptor limit</td>
+<td><code>65536</code></td>
+</tr>
+<tr>
+<td><code>maxAvailableSchedulers</code></td>
+<td>RabbitMQ maximum available scheduler threads</td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>onlineSchedulers</code></td>
+<td>RabbitMQ online scheduler threads</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>memoryHighWatermark.enabled</code></td>
+<td>Enable configuring Memory high watermark on RabbitMQ</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>memoryHighWatermark.type</code></td>
+<td>Memory high watermark type. Either <code>absolute</code> or <code>relative</code></td>
+<td><code>relative</code></td>
+</tr>
+<tr>
+<td><code>memoryHighWatermark.value</code></td>
+<td>Memory high watermark value</td>
+<td><code>0.4</code></td>
+</tr>
+<tr>
+<td><code>plugins</code></td>
+<td>List of default plugins to enable (should only be altered to remove defaults; for additional plugins use <code>extraPlugins</code>)</td>
+<td><code>rabbitmq_management rabbitmq_peer_discovery_k8s</code></td>
+</tr>
+<tr>
+<td><code>communityPlugins</code></td>
+<td>List of custom plugins (URLs) to be downloaded during container initialization</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>hostAliases</code></td>
+<td>Add deployment host aliases</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>extraPlugins</code></td>
+<td>Extra plugins to enable (single string containing a space-separated list)</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>clustering.addressType</code></td>
+<td>Switch clustering mode. Either <code>ip</code> or <code>hostname</code></td>
+<td><code>hostname</code></td>
+</tr>
+<tr>
+<td><code>clustering.rebalance</code></td>
+<td>Rebalance master for queues in cluster when new replica is created</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>clustering.forceBoot</code></td>
+<td>Force boot of an unexpectedly shut down cluster (in an unexpected order).</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>loadDefinition.enabled</code></td>
+<td>Enable loading a RabbitMQ definitions file to configure RabbitMQ</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>loadDefinition.existingSecret</code></td>
+<td>Existing secret with the load definitions file</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>command</code></td>
+<td>Override default container command (useful when using custom images)</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>args</code></td>
+<td>Override default container args (useful when using custom images)</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>terminationGracePeriodSeconds</code></td>
+<td>TerminationGracePeriodSeconds of container (time in excess of 10 seconds will be spent waiting for synchronization)</td>
+<td><code>120</code></td>
+</tr>
+<tr>
+<td><code>extraEnvVars</code></td>
+<td>Extra environment variables to add to RabbitMQ pods</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>extraEnvVarsCM</code></td>
+<td>Name of existing ConfigMap containing extra env vars</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>extraEnvVarsSecret</code></td>
+<td>Name of existing Secret containing extra env vars (in case of sensitive data)</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>extraContainerPorts</code></td>
+<td>Extra ports to be included in container spec, primarily informational</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>configuration</code></td>
+<td>RabbitMQ configuration</td>
+<td>Check <code>values.yaml</code> file</td>
+</tr>
+<tr>
+<td><code>extraConfiguration</code></td>
+<td>Extra configuration to be appended to RabbitMQ configuration</td>
+<td>Check <code>values.yaml</code> file</td>
+</tr>
+<tr>
+<td><code>advancedConfiguration</code></td>
+<td>Extra configuration (in classic format)</td>
+<td>Check <code>values.yaml</code> file</td>
+</tr>
+<tr>
+<td><code>ldap.enabled</code></td>
+<td>Enable LDAP support</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>ldap.servers</code></td>
+<td>List of LDAP servers hostnames</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>ldap.port</code></td>
+<td>LDAP servers port</td>
+<td><code>389</code></td>
+</tr>
+<tr>
+<td><code>ldap.user_dn_pattern</code></td>
+<td>Pattern used to translate the provided username into a value to be used for the LDAP bind</td>
+<td><code>cn=${username},dc=example,dc=org</code></td>
+</tr>
+<tr>
+<td><code>ldap.tls.enabled</code></td>
+<td>Enable TLS for LDAP connections (check advancedConfiguration parameter in values.yml)</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-statefulset-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#statefulset-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Statefulset parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>replicaCount</code></td>
+<td>Number of RabbitMQ nodes</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>schedulerName</code></td>
+<td>Name of the k8s service (other than default)</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>podManagementPolicy</code></td>
+<td>Pod management policy</td>
+<td><code>OrderedReady</code></td>
+</tr>
+<tr>
+<td><code>updateStrategyType</code></td>
+<td>Update strategy type for the statefulset</td>
+<td><code>RollingUpdate</code></td>
+</tr>
+<tr>
+<td><code>rollingUpdatePartition</code></td>
+<td>Partition update strategy</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>statefulsetLabels</code></td>
+<td>RabbitMQ statefulset labels</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>podLabels</code></td>
+<td>RabbitMQ pod labels</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>podAnnotations</code></td>
+<td>RabbitMQ Pod annotations</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>podAffinityPreset</code></td>
+<td>Pod affinity preset. Ignored if <code>affinity</code> is set. Allowed values: <code>soft</code> or <code>hard</code></td>
+<td><code>""</code></td>
+</tr>
+<tr>
+<td><code>podAntiAffinityPreset</code></td>
+<td>Pod anti-affinity preset. Ignored if <code>affinity</code> is set. Allowed values: <code>soft</code> or <code>hard</code></td>
+<td><code>soft</code></td>
+</tr>
+<tr>
+<td><code>nodeAffinityPreset.type</code></td>
+<td>Node affinity preset type. Ignored if <code>affinity</code> is set. Allowed values: <code>soft</code> or <code>hard</code></td>
+<td><code>""</code></td>
+</tr>
+<tr>
+<td><code>nodeAffinityPreset.key</code></td>
+<td>Node label key to match Ignored if <code>affinity</code> is set.</td>
+<td><code>""</code></td>
+</tr>
+<tr>
+<td><code>nodeAffinityPreset.values</code></td>
+<td>Node label values to match. Ignored if <code>affinity</code> is set.</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>nodeSelector</code></td>
+<td>Node labels for pod assignment</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>tolerations</code></td>
+<td>Tolerations for pod assignment</td>
+<td><code>[]</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>affinity</code></td>
+<td>Affinity for pod assignment</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>priorityClassName</code></td>
+<td>Name of the existing priority class to be used by rabbitmq pods</td>
+<td><code>""</code></td>
+</tr>
+<tr>
+<td><code>podSecurityContext</code></td>
+<td>RabbitMQ pods' Security Context</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>containerSecurityContext</code></td>
+<td>RabbitMQ containers' Security Context</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>resources.limits</code></td>
+<td>The resources limits for RabbitMQ containers</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>resources.requests</code></td>
+<td>The requested resources for RabbitMQ containers</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>livenessProbe</code></td>
+<td>Liveness probe configuration for RabbitMQ</td>
+<td>Check <code>values.yaml</code> file</td>
+</tr>
+<tr>
+<td><code>readinessProbe</code></td>
+<td>Readiness probe configuration for RabbitMQ</td>
+<td>Check <code>values.yaml</code> file</td>
+</tr>
+<tr>
+<td><code>customLivenessProbe</code></td>
+<td>Override default liveness probe</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>customReadinessProbe</code></td>
+<td>Override default readiness probe</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>customStartupProbe</code></td>
+<td>Define a custom startup probe</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>pdb.create</code></td>
+<td>Enable/disable a Pod Disruption Budget creation</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>pdb.minAvailable</code></td>
+<td>Minimum number/percentage of pods that should remain scheduled</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>pdb.maxUnavailable</code></td>
+<td>Maximum number/percentage of pods that may be made unavailable</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>initContainers</code></td>
+<td>Add additional init containers to the RabbitMQ pod</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>sidecars</code></td>
+<td>Add additional sidecar containers to the RabbitMQ pod</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>extraVolumeMounts</code></td>
+<td>Optionally specify extra list of additional volumeMounts .</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>extraVolumes</code></td>
+<td>Optionally specify extra list of additional volumes .</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>extraSecrets</code></td>
+<td>Optionally specify extra secrets to be created by the chart.</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-exposure-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#exposure-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Exposure parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>service.type</code></td>
+<td>Kubernetes Service type</td>
+<td><code>ClusterIP</code></td>
+</tr>
+<tr>
+<td><code>service.port</code></td>
+<td>Amqp port</td>
+<td><code>5672</code></td>
+</tr>
+<tr>
+<td><code>service.portName</code></td>
+<td>Amqp service port name</td>
+<td><code>amqp</code></td>
+</tr>
+<tr>
+<td><code>service.tlsPort</code></td>
+<td>Amqp TLS port</td>
+<td><code>5671</code></td>
+</tr>
+<tr>
+<td><code>service.tlsPortName</code></td>
+<td>Amqp TLS service port name</td>
+<td><code>amqp-ssl</code></td>
+</tr>
+<tr>
+<td><code>service.nodePort</code></td>
+<td>Node port override for <code>amqp</code> port, if serviceType NodePort or LoadBalancer</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.tlsNodePort</code></td>
+<td>Node port override for <code>amqp-ssl</code> port, if serviceType NodePort or LoadBalancer</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.distPort</code></td>
+<td>Erlang distribution server port</td>
+<td><code>25672</code></td>
+</tr>
+<tr>
+<td><code>service.distPortName</code></td>
+<td>Erlang distribution service port name</td>
+<td><code>dist</code></td>
+</tr>
+<tr>
+<td><code>service.distNodePort</code></td>
+<td>Node port override for <code>dist</code> port, if serviceType NodePort</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.managerPort</code></td>
+<td>RabbitMQ Manager port</td>
+<td><code>15672</code></td>
+</tr>
+<tr>
+<td><code>service.managerPortName</code></td>
+<td>RabbitMQ Manager service port name</td>
+<td><code>http-stats</code></td>
+</tr>
+<tr>
+<td><code>service.managerNodePort</code></td>
+<td>Node port override for <code>http-stats</code> port, if serviceType NodePort</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.metricsPort</code></td>
+<td>RabbitMQ Prometheues metrics port</td>
+<td><code>9419</code></td>
+</tr>
+<tr>
+<td><code>service.metricsPortName</code></td>
+<td>RabbitMQ Prometheues metrics service port name</td>
+<td><code>metrics</code></td>
+</tr>
+<tr>
+<td><code>service.metricsNodePort</code></td>
+<td>Node port override for <code>metrics</code> port, if serviceType NodePort</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.epmdPortName</code></td>
+<td>EPMD Discovery service port name</td>
+<td><code>epmd</code></td>
+</tr>
+<tr>
+<td><code>service.epmdNodePort</code></td>
+<td>Node port override for <code>epmd</code> port, if serviceType NodePort</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.extraPorts</code></td>
+<td>Extra ports to expose in the service</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>service.loadBalancerSourceRanges</code></td>
+<td>Address(es) that are allowed when service is LoadBalancer</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>service.loadBalancerIP</code></td>
+<td>LoadBalancerIP for the service</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.externalIP</code></td>
+<td>ExternalIP for the service</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>service.externalTrafficPolicy</code></td>
+<td>Enable client source IP preservation</td>
+<td><code>Cluster</code></td>
+</tr>
+<tr>
+<td><code>service.labels</code></td>
+<td>Service labels</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>service.annotations</code></td>
+<td>Service annotations</td>
+<td><code>{}</code> (evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>ingress.enabled</code></td>
+<td>Enable ingress resource for Management console</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>ingress.path</code></td>
+<td>Path for the default host</td>
+<td><code>/</code></td>
+</tr>
+<tr>
+<td><code>ingress.certManager</code></td>
+<td>Add annotations for cert-manager</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>ingress.hostname</code></td>
+<td>Default host for the ingress resource</td>
+<td><code>rabbitmq.local</code></td>
+</tr>
+<tr>
+<td><code>ingress.pathType</code></td>
+<td>Ingress path type</td>
+<td><code>ImplementationSpecific</code></td>
+</tr>
+<tr>
+<td><code>ingress.annotations</code></td>
+<td>Ingress annotations</td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td><code>ingress.tls</code></td>
+<td>Enable TLS configuration for the hostname defined at <code>ingress.hostname</code> parameter</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>ingress.existingSecret</code></td>
+<td>Existing secret for the Ingress TLS certificate</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.extraHosts[0].name</code></td>
+<td>Additional hostnames to be covered</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.extraHosts[0].path</code></td>
+<td>Additional hostnames to be covered</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.extraTls[0].hosts[0]</code></td>
+<td>TLS configuration for additional hostnames to be covered</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.extraTls[0].secretName</code></td>
+<td>TLS configuration for additional hostnames to be covered</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.secrets[0].name</code></td>
+<td>TLS Secret Name</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.secrets[0].certificate</code></td>
+<td>TLS Secret Certificate</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>ingress.secrets[0].key</code></td>
+<td>TLS Secret Key</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>networkPolicy.enabled</code></td>
+<td>Enable NetworkPolicy</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>networkPolicy.allowExternal</code></td>
+<td>Don't require client label for connections</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>networkPolicy.additionalRules</code></td>
+<td>Additional NetworkPolicy rules</td>
+<td><code>nil</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-persistence-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#persistence-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Persistence parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>persistence.enabled</code></td>
+<td>Enable RabbitMQ data persistence using PVC</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>persistence.existingClaim</code></td>
+<td>Provide an existing <code>PersistentVolumeClaim</code>, the value is evaluated as a template</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>persistence.storageClass</code></td>
+<td>PVC Storage Class for RabbitMQ data volume</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>persistence.accessMode</code></td>
+<td>PVC Access Mode for RabbitMQ data volume</td>
+<td><code>ReadWriteOnce</code></td>
+</tr>
+<tr>
+<td><code>persistence.size</code></td>
+<td>PVC Storage Request for RabbitMQ data volume</td>
+<td><code>8Gi</code></td>
+</tr>
+<tr>
+<td><code>persistence.selector</code></td>
+<td>Selector to match an existing Persistent Volume</td>
+<td><code>{}</code>(evaluated as a template)</td>
+</tr>
+<tr>
+<td><code>persistence.volumes</code></td>
+<td>Additional volumes without creating PVC</td>
+<td><code>{}</code>(evaluated as a template)</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-rbac-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#rbac-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>RBAC parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>serviceAccount.create</code></td>
+<td>Enable creation of ServiceAccount for RabbitMQ pods</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>serviceAccount.name</code></td>
+<td>Name of the created serviceAccount</td>
+<td>Generated using the <code>rabbitmq.fullname</code> template</td>
+</tr>
+<tr>
+<td><code>rbac.create</code></td>
+<td>Weather to create &amp; use RBAC resources or not</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-volume-permissions-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#volume-permissions-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Volume Permissions parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>volumePermissions.enabled</code></td>
+<td>Enable init container that changes the owner and group of the persistent volume(s) mountpoint to <code>runAsUser:fsGroup</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>volumePermissions.image.registry</code></td>
+<td>Init container volume-permissions image registry</td>
+<td><code>docker.io</code></td>
+</tr>
+<tr>
+<td><code>volumePermissions.image.repository</code></td>
+<td>Init container volume-permissions image name</td>
+<td><code>bitnami/minideb</code></td>
+</tr>
+<tr>
+<td><code>volumePermissions.image.tag</code></td>
+<td>Init container volume-permissions image tag</td>
+<td><code>buster</code></td>
+</tr>
+<tr>
+<td><code>volumePermissions.image.pullPolicy</code></td>
+<td>Init container volume-permissions image pull policy</td>
+<td><code>Always</code></td>
+</tr>
+<tr>
+<td><code>volumePermissions.image.pullSecrets</code></td>
+<td>Specify docker-registry secret names as an array</td>
+<td><code>[]</code> (does not add image pull secrets to deployed pods)</td>
+</tr>
+<tr>
+<td><code>volumePermissions.resources.limits</code></td>
+<td>Init container volume-permissions resource  limits</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>volumePermissions.resources.requests</code></td>
+<td>Init container volume-permissions resource  requests</td>
+<td><code>{}</code></td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-metrics-parameters" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#metrics-parameters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Metrics parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>metrics.enabled</code></td>
+<td>Enable exposing RabbitMQ metrics to be gathered by Prometheus</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>metrics.plugins</code></td>
+<td>Plugins to enable Prometheus metrics in RabbitMQ</td>
+<td><code>rabbitmq_prometheus</code></td>
+</tr>
+<tr>
+<td><code>metrics.podAnnotations</code></td>
+<td>Annotations for enabling prometheus to access the metrics endpoint</td>
+<td><code>{prometheus.io/scrape: "true", prometheus.io/port: "9419"}</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.enabled</code></td>
+<td>Create ServiceMonitor Resource for scraping metrics using PrometheusOperator</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.namespace</code></td>
+<td>Namespace which Prometheus is running in</td>
+<td><code>monitoring</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.interval</code></td>
+<td>Interval at which metrics should be scraped</td>
+<td><code>30s</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.scrapeTimeout</code></td>
+<td>Specify the timeout after which the scrape is ended</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.relabellings</code></td>
+<td>Specify Metric Relabellings to add to the scrape endpoint</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.honorLabels</code></td>
+<td>honorLabels chooses the metric's labels on collisions with target labels.</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.additionalLabels</code></td>
+<td>Used to pass Labels that are required by the Installed Prometheus Operator</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>metrics.serviceMonitor.release</code></td>
+<td>Used to pass Labels release that sometimes should be custom for Prometheus Operator</td>
+<td><code>nil</code></td>
+</tr>
+<tr>
+<td><code>metrics.prometheusRule.enabled</code></td>
+<td>Set this to true to create prometheusRules for Prometheus operator</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>metrics.prometheusRule.additionalLabels</code></td>
+<td>Additional labels that can be used so prometheusRules will be discovered by Prometheus</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>metrics.prometheusRule.namespace</code></td>
+<td>namespace where prometheusRules resource should be created</td>
+<td><code>monitoring</code></td>
+</tr>
+<tr>
+<td><code>metrics.prometheusRule.rules</code></td>
+<td>Rules to be created, check values for an example.</td>
+<td><code>[]</code></td>
+</tr>
+</tbody>
+</table>
+<p>The above parameters map to the env variables defined in <a href="http://github.com/bitnami/bitnami-docker-rabbitmq">bitnami/rabbitmq</a>. For more information please refer to the <a href="http://github.com/bitnami/bitnami-docker-rabbitmq">bitnami/rabbitmq</a> image documentation.</p>
+<p>Specify each parameter using the <code>--set key=value[,key=value]</code> argument to <code>helm install</code>. For example,</p>
+<div class="highlight highlight-source-shell"><pre>$ helm install my-release \
+  --set auth.username=admin,auth.password=secretpassword,auth.erlangCookie=secretcookie \
+    bitnami/rabbitmq</pre></div>
+<p>The above command sets the RabbitMQ admin username and password to <code>admin</code> and <code>secretpassword</code> respectively. Additionally the secure erlang cookie is set to <code>secretcookie</code>.</p>
+<p>Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,</p>
+<div class="highlight highlight-source-shell"><pre>$ helm install my-release -f values.yaml bitnami/rabbitmq</pre></div>
+<blockquote>
+<p><strong>Tip</strong>: You can use the default <a href="https://github.com/bitnami/charts/blob/master/bitnami/rabbitmq/values.yaml">values.yaml</a></p>
+</blockquote>
+<h2><a id="user-content-configuration-and-installation-details" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#configuration-and-installation-details"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Configuration and installation details</h2>
+<h3><a id="user-content-rolling-vs-immutable-tags" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#rolling-vs-immutable-tags"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><a href="https://docs.bitnami.com/containers/how-to/understand-rolling-tags-containers/" rel="nofollow">Rolling VS Immutable tags</a></h3>
+<p>It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.</p>
+<p>Bitnami will release a new chart updating its containers if a new version of the main container, significant changes, or critical vulnerabilities exist.</p>
+<h3><a id="user-content-setting-pods-affinity" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#setting-pods-affinity"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Setting Pod's affinity</h3>
+<p>This chart allows you to set your custom affinity using the <code>affinity</code> parameter. Find more information about Pod's affinity in the <a href="https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity" rel="nofollow">kubernetes documentation</a>.</p>
+<p>As an alternative, you can use of the preset configurations for pod affinity, pod anti-affinity, and node affinity available at the <a href="https://github.com/bitnami/charts/tree/master/bitnami/common#affinities">bitnami/common</a> chart. To do so, set the <code>podAffinityPreset</code>, <code>podAntiAffinityPreset</code>, or <code>nodeAffinityPreset</code> parameters.</p>
+<h3><a id="user-content-horizontal-scaling" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#horizontal-scaling"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Horizontal scaling</h3>
+<p>To horizontally scale this chart once it has been deployed you have two options:</p>
+<ul>
+<li>Use <code>kubectl scale</code> command.</li>
+<li>Upgrading the chart with the following parameters:</li>
+</ul>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">replicaCount=3</span>
+<span class="pl-c1">auth.password="$RABBITMQ_PASSWORD"</span>
+<span class="pl-c1">auth.erlangCookie="$RABBITMQ_ERLANG_COOKIE"</span></pre></div>
+<blockquote>
+<p>Note: please note it's mandatory to indicate the password and erlangCookie that was set the first time the chart was installed to upgrade the chart. Otherwise, new pods won't be able to join the cluster.</p>
+</blockquote>
+<p>When scaling down the solution unnecessary RabbitMQ nodes are automatically stopped, but they are not removed from the cluster. You need to manually remove them running the <code>rabbitmqctl forget_cluster_node</code> command. For instance, if you initially installed RabbitMQ with 3 replicas and then you scaled it down to 2 replicas, run the commands below (assuming that the release name is <code>rabbitmq</code> and you're using <code>hostname</code> as clustering type):</p>
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">kubectl <span class="pl-c1">exec</span> rabbitmq-0 --container rabbitmq -- rabbitmqctl forget_cluster_node rabbit@rabbitmq-2.rabbitmq-headless.default.svc.cluster.local</span>
+$ <span class="pl-s1">kubectl delete pvc data-rabbitmq-2</span></pre></div>
+<h3><a id="user-content-enabling-tls-support" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#enabling-tls-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Enabling TLS support</h3>
+<p>To enable TLS support you must generate the certificates using RabbitMQ <a href="https://www.rabbitmq.com/ssl.html#automated-certificate-generation" rel="nofollow">documentation</a>. Once you have your certificate, you have two alternatives:</p>
+<p>A) Create a secret including the certificates:</p>
+<div class="highlight highlight-source-shell"><pre>$ kubectl create secret generic rabbitmq-certificates --from-file=./ca.crt --from-file=./tls.crt --from-file=./tls.key</pre></div>
+<p>Then, install the RabbitMQ chart setting the parameters below:</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">tls.enabled=true</span>
+<span class="pl-c1">tls.existingSecret=rabbitmq-certificates</span></pre></div>
+<p>B) Include the certificates in your values.yaml:</p>
+<div class="highlight highlight-source-yaml"><pre><span class="pl-ent">auth</span>:
+  <span class="pl-ent">enabled</span>: <span class="pl-c1">true</span>
+  <span class="pl-ent">caCertificate</span>: <span class="pl-s">|-</span>
+<span class="pl-s">    -----BEGIN CERTIFICATE-----</span>
+<span class="pl-s">    MIIDRTCCAi2gAwIBAgIJAJPh+paO6a3cMA0GCSqGSIb3DQEBCwUAMDExIDAeBgNV</span>
+<span class="pl-s">    ...</span>
+<span class="pl-s">    -----END CERTIFICATE-----</span>
+<span class="pl-s"></span>  <span class="pl-ent">serverCertificate</span>: <span class="pl-s">|-</span>
+<span class="pl-s">    -----BEGIN CERTIFICATE-----</span>
+<span class="pl-s">    MIIDqjCCApKgAwIBAgIBATANBgkqhkiG9w0BAQsFADAxMSAwHgYDVQQDDBdUTFNH</span>
+<span class="pl-s">    ...</span>
+<span class="pl-s">    -----END CERTIFICATE-----</span>
+<span class="pl-s"></span>  <span class="pl-ent">serverKey</span>: <span class="pl-s">|-</span>
+<span class="pl-s">    -----BEGIN RSA PRIVATE KEY-----</span>
+<span class="pl-s">    MIIEpAIBAAKCAQEA2iX3M4d3LHrRAoVUbeFZN3EaGzKhyBsz7GWwTgETiNj+AL7p</span>
+<span class="pl-s">    ....</span>
+<span class="pl-s">    -----END RSA PRIVATE KEY-----</span></pre></div>
+<ul>
+<li>Setting <a href="https://www.rabbitmq.com/ssl.html#peer-verification-configuration" rel="nofollow">auth.tls.failIfNoPeerCert</a> to <code>false</code> allows a TLS connection if client fails to provide a certificate.</li>
+<li>When setting <a href="https://www.rabbitmq.com/ssl.html#peer-verification-configuration" rel="nofollow">auth.tls.sslOptionsVerify</a> to <code>verify_peer</code>, the node must perform peer verification. When set to <code>verify_none</code>, peer verification will be disabled and certificate exchange won't be performed.</li>
+</ul>
+<h4><a id="user-content-tls-integration-with-cert-manager-lets-encrypt-certificates" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#tls-integration-with-cert-manager-lets-encrypt-certificates"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>TLS integration with <code>cert-manager</code> (Let's Encrypt certificates)</h4>
+<p>If using <code>cert-manager</code> to provision Let's Encrypt certificates, the <code>tls.crt</code> key in the generated TLS secret will contain the full certificate chain. Depending on the version of <code>cert-manager</code> in use, there can either be an empty <code>ca.crt</code> key, or none at all.</p>
+<p>In order to instruct RabbitMQ to look for the CA certificate within the primary certificate, <code>auth.tls.existingSecretFullChain</code> can be set to <code>true</code>.</p>
+<h3><a id="user-content-load-definitions" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#load-definitions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Load Definitions</h3>
+<p>It is possible to <a href="http://www.rabbitmq.com/management.html#load-definitions" rel="nofollow">load a RabbitMQ definitions file to configure RabbitMQ</a>. Because definitions may contain RabbitMQ credentials, <a href="https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod" rel="nofollow">store the JSON as a Kubernetes secret</a>. Within the secret's data, choose a key name that corresponds with the desired load definitions filename (i.e. <code>load_definition.json</code>) and use the JSON object as the value. For example:</p>
+<div class="highlight highlight-source-yaml"><pre><span class="pl-ent">apiVersion</span>: <span class="pl-c1">v1</span>
+<span class="pl-ent">kind</span>: <span class="pl-s">Secret</span>
+<span class="pl-ent">metadata</span>:
+  <span class="pl-ent">name</span>: <span class="pl-s">rabbitmq-load-definition</span>
+<span class="pl-ent">type</span>: <span class="pl-s">Opaque</span>
+<span class="pl-ent">stringData</span>:
+  <span class="pl-ent">load_definition.json</span>: <span class="pl-s">|-</span>
+<span class="pl-s">    {</span>
+<span class="pl-s">      "users": [</span>
+<span class="pl-s">        {</span>
+<span class="pl-s">          "name": "user",</span>
+<span class="pl-s">          "password": "CHANGEME",</span>
+<span class="pl-s">          "tags": "administrator"</span>
+<span class="pl-s">        }</span>
+<span class="pl-s">      ],</span>
+<span class="pl-s">      "vhosts": [</span>
+<span class="pl-s">        {</span>
+<span class="pl-s">          "name": "/"</span>
+<span class="pl-s">        }</span>
+<span class="pl-s">      ]</span>
+<span class="pl-s">    }</span></pre></div>
+<p>Then, specify the <code>load_definitions</code> property as an <code>extraConfiguration</code> pointing to the load definition file path within the container (i.e. <code>/app/load_definition.json</code>) and set <code>loadDefinition.enable</code> to <code>true</code>. Any load definitions specified will be available within in the container at <code>/app</code>.</p>
+<blockquote>
+<p>Loading a definition will take precedence over any configuration done through <a href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#parameters">Helm values</a>.</p>
+</blockquote>
+<p>If needed, you can use <code>extraSecrets</code> to let the chart create the secret for you. This way, you don't need to manually create it before deploying a release. These secrets can also be templated to use supplied chart values. For example:</p>
+<div class="highlight highlight-source-yaml"><pre><span class="pl-ent">extraSecrets</span>:
+  <span class="pl-ent">load-definition</span>:
+    <span class="pl-ent">load_definition.json</span>: <span class="pl-s">|</span>
+<span class="pl-s">      {</span>
+<span class="pl-s">        "users": [</span>
+<span class="pl-s">          {</span>
+<span class="pl-s">            "name": "{{ .Values.auth.username }}",</span>
+<span class="pl-s">            "password": "{{ .Values.auth.password }}",</span>
+<span class="pl-s">            "tags": "administrator"</span>
+<span class="pl-s">          }</span>
+<span class="pl-s">        ],</span>
+<span class="pl-s">        "vhosts": [</span>
+<span class="pl-s">          {</span>
+<span class="pl-s">            "name": "/"</span>
+<span class="pl-s">          }</span>
+<span class="pl-s">        ]</span>
+<span class="pl-s">      }</span>
+<span class="pl-s"></span><span class="pl-ent">loadDefinition</span>:
+  <span class="pl-ent">enabled</span>: <span class="pl-c1">true</span>
+  <span class="pl-ent">existingSecret</span>: <span class="pl-s">load-definition</span>
+<span class="pl-ent">extraConfiguration</span>: <span class="pl-s">|</span>
+<span class="pl-s">  load_definitions = /app/load_definition.json</span></pre></div>
+<h3><a id="user-content-ldap" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#ldap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>LDAP</h3>
+<p>LDAP support can be enabled in the chart by specifying the <code>ldap.</code> parameters while creating a release. The following parameters should be configured to properly enable the LDAP support in the chart.</p>
+<ul>
+<li><code>ldap.enabled</code>: Enable LDAP support. Defaults to <code>false</code>.</li>
+<li><code>ldap.servers</code>: List of LDAP servers hostnames. No defaults.</li>
+<li><code>ldap.port</code>: LDAP servers port. <code>389</code>.</li>
+<li><code>ldap.user_dn_pattern</code>: Pattern used to translate the provided username into a value to be used for the LDAP bind. Defaults to <code>cn=${username},dc=example,dc=org</code>.</li>
+<li><code>ldap.tls.enabled</code>: Enable TLS for LDAP connections. Defaults to <code>false</code>.</li>
+</ul>
+<p>For example:</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">ldap.enabled=true</span>
+<span class="pl-c1">ldap.serverss[0]="my-ldap-server"</span>
+<span class="pl-c1">ldap.port="389"</span>
+<span class="pl-c1">ldap.user_dn_pattern="cn=${username},dc=example,dc=org"</span></pre></div>
+<p>If <code>ldap.tls.enabled</code> is set to true, consider using <code>ldap.port=636</code> and checking the settings in the advancedConfiguration.</p>
+<h3><a id="user-content-memory-high-watermark" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#memory-high-watermark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Memory high watermark</h3>
+<p>It is possible to configure Memory high watermark on RabbitMQ to define <a href="https://www.rabbitmq.com/memory.html#threshold" rel="nofollow">memory thresholds</a> using the <code>memoryHighWatermark.*</code> parameters. To do so, you have two alternatives:</p>
+<p>A) Set an absolute limit of RAM to be used on each RabbitMQ node:</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">memoryHighWatermark.enabled="true"</span>
+<span class="pl-c1">memoryHighWatermark.type="absolute"</span>
+<span class="pl-c1">memoryHighWatermark.value="512MB"</span></pre></div>
+<p>B) Set a relative limit of RAM to be used on each RabbitMQ node. To enable this feature, you must define the memory limits at POD level too:</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">memoryHighWatermark.enabled="true"</span>
+<span class="pl-c1">memoryHighWatermark.type="relative"</span>
+<span class="pl-c1">memoryHighWatermark.value="0.4"</span>
+<span class="pl-c1">resources.limits.memory="2Gi"</span></pre></div>
+<h3><a id="user-content-adding-extra-environment-variables" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#adding-extra-environment-variables"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Adding extra environment variables</h3>
+<p>In case you want to add extra environment variables (useful for advanced operations like custom init scripts), you can use the <code>extraEnvVars</code> property.</p>
+<div class="highlight highlight-source-yaml"><pre><span class="pl-ent">extraEnvVars</span>:
+  - <span class="pl-ent">name</span>: <span class="pl-s">LOG_LEVEL</span>
+    <span class="pl-ent">value</span>: <span class="pl-s">error</span></pre></div>
+<p>Alternatively, you can use a ConfigMap or a Secret with the environment variables. To do so, use the <code>.extraEnvVarsCM</code> or the <code>extraEnvVarsSecret</code> properties.</p>
+<h3><a id="user-content-plugins" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#plugins"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Plugins</h3>
+<p>The Bitnami Docker RabbitMQ image ships a set of plugins by default. You can use the command below to obtain the whole list.</p>
+<div class="highlight highlight-source-shell"><pre>$ docker run --rm -it bitnami/rabbitmq -- ls /opt/bitnami/rabbitmq/plugins/</pre></div>
+<p>By default, this chart enables <code>rabbitmq_management</code> and <code>rabbitmq_peer_discovery_k8s</code> since they are required for RabbitMQ to work on K8s. To enable extra plugins, set the <code>extraPlugins</code> parameter with the list of plugins you want to enable.</p>
+<p>In addition to this, you can also use the <code>communityPlugins</code> parameter to indicate a list of URLs separated by spaces where to download you custom plugins for RabbitMQ. For instance, use the parameters below to download a custom plugin during the container initialization and enable it:</p>
+<div class="highlight highlight-text-shell-session"><pre><span class="pl-c1">communityPlugins="http://some-public-url/my-custom-plugin-X.Y.Z.ez"</span>
+<span class="pl-c1">extraPlugins="my-custom-plugin"</span></pre></div>
+<h3><a id="user-content-known-issues" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#known-issues"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Known issues</h3>
+<ul>
+<li>Changing the password through RabbitMQ's UI can make the pod fail due to the default liveness probes. If you do so, remember to make the chart aware of the new password. Updating the default secret with the password you set through RabbitMQ's UI will automatically recreate the pods. If you are using your own secret, you may have to manually recreate the pods.</li>
+</ul>
+<h2><a id="user-content-persistence" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#persistence"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Persistence</h2>
+<p>The <a href="https://github.com/bitnami/bitnami-docker-rabbitmq">Bitnami RabbitMQ</a> image stores the RabbitMQ data and configurations at the <code>/opt/bitnami/rabbitmq/var/lib/rabbitmq/</code> path of the container.</p>
+<p>The chart mounts a <a href="http://kubernetes.io/docs/user-guide/persistent-volumes/" rel="nofollow">Persistent Volume</a> at this location. By default, the volume is created using dynamic volume provisioning. An existing PersistentVolumeClaim can also be defined.</p>
+<h3><a id="user-content-existing-persistentvolumeclaims" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#existing-persistentvolumeclaims"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Existing PersistentVolumeClaims</h3>
+<ol>
+<li>Create the PersistentVolume</li>
+<li>Create the PersistentVolumeClaim</li>
+<li>Install the chart</li>
+</ol>
+<div class="highlight highlight-source-shell"><pre>$ helm install my-release --set persistence.existingClaim=PVC_NAME bitnami/rabbitmq</pre></div>
+<h3><a id="user-content-adjust-permissions-of-the-persistence-volume-mountpoint" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#adjust-permissions-of-the-persistence-volume-mountpoint"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Adjust permissions of the persistence volume mountpoint</h3>
+<p>As the image runs as non-root by default, it is necessary to adjust the ownership of the persistent volume so that the container can write data into it.</p>
+<p>By default, the chart is configured to use Kubernetes Security Context to automatically change the ownership of the volume. However, this feature does not work in all Kubernetes distributions.
+As an alternative, this chart supports using an <code>initContainer</code> to change the ownership of the volume before mounting it in the final destination.</p>
+<p>You can enable this <code>initContainer</code> by setting <code>volumePermissions.enabled</code> to <code>true</code>.</p>
+<h3><a id="user-content-configure-the-default-uservhost" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#configure-the-default-uservhost"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Configure the default user/vhost</h3>
+<p>If you want to create default user/vhost and set the default permission. you can use <code>extraConfiguration</code>:</p>
+<div class="highlight highlight-source-yaml"><pre><span class="pl-ent">auth</span>:
+  <span class="pl-ent">username</span>: <span class="pl-s">default-user</span>
+<span class="pl-ent">extraConfiguration</span>: <span class="pl-s">|-</span>
+<span class="pl-s">  default_vhost = default-vhost</span>
+<span class="pl-s">  default_permissions.configure = .*</span>
+<span class="pl-s">  default_permissions.read = .*</span>
+<span class="pl-s">  default_permissions.write = .*</span></pre></div>
+<h2><a id="user-content-troubleshooting" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#troubleshooting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Troubleshooting</h2>
+<p>Find more information about how to deal with common errors related to Bitnami’s Helm charts in <a href="https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues" rel="nofollow">this troubleshooting guide</a>.</p>
+<h2><a id="user-content-upgrading" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#upgrading"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Upgrading</h2>
+<p>It's necessary to set the <code>auth.password</code> and <code>auth.erlangCookie</code> parameters when upgrading for readiness/liveness probes to work properly. When you install this chart for the first time, some notes will be displayed providing the credentials you must use under the 'Credentials' section. Please note down the password and the cookie, and run the command below to upgrade your chart:</p>
+<div class="highlight highlight-source-shell"><pre>$ helm upgrade my-release bitnami/rabbitmq --set auth.password=[PASSWORD] --set auth.erlangCookie=[RABBITMQ_ERLANG_COOKIE]</pre></div>
+<p>| Note: you need to substitute the placeholders [PASSWORD] and [RABBITMQ_ERLANG_COOKIE] with the values obtained in the installation notes.</p>
+<h3><a id="user-content-to-800" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#to-800"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>To 8.0.0</h3>
+<p><a href="https://github.com/helm/charts#status-of-the-project">On November 13, 2020, Helm v2 support was formally finished</a>, this major version is the result of the required changes applied to the Helm Chart to be able to incorporate the different features added in Helm v3 and to be consistent with the Helm project itself regarding the Helm v2 EOL.</p>
+<p><strong>What changes were introduced in this major version?</strong></p>
+<ul>
+<li>Previous versions of this Helm Chart use <code>apiVersion: v1</code> (installable by both Helm 2 and 3), this Helm Chart was updated to <code>apiVersion: v2</code> (installable by Helm 3 only). <a href="https://helm.sh/docs/topics/charts/#the-apiversion-field" rel="nofollow">Here</a> you can find more information about the <code>apiVersion</code> field.</li>
+<li>Move dependency information from the <em>requirements.yaml</em> to the <em>Chart.yaml</em></li>
+<li>After running <code>helm dependency update</code>, a <em>Chart.lock</em> file is generated containing the same structure used in the previous <em>requirements.lock</em></li>
+<li>The different fields present in the <em>Chart.yaml</em> file has been ordered alphabetically in a homogeneous way for all the Bitnami Helm Charts</li>
+</ul>
+<p><strong>Considerations when upgrading to this version</strong></p>
+<ul>
+<li>If you want to upgrade to this version from a previous one installed with Helm v3, you shouldn't face any issues</li>
+<li>If you want to upgrade to this version using Helm v2, this scenario is not supported as this version doesn't support Helm v2 anymore</li>
+<li>If you installed the previous version with Helm v2 and wants to upgrade to this version with Helm v3, please refer to the <a href="https://helm.sh/docs/topics/v2_v3_migration/#migration-use-cases" rel="nofollow">official Helm documentation</a> about migrating from Helm v2 to v3</li>
+</ul>
+<p><strong>Useful links</strong></p>
+<ul>
+<li><a href="https://docs.bitnami.com/tutorials/resolve-helm2-helm3-post-migration-issues/" rel="nofollow">https://docs.bitnami.com/tutorials/resolve-helm2-helm3-post-migration-issues/</a></li>
+<li><a href="https://helm.sh/docs/topics/v2_v3_migration/" rel="nofollow">https://helm.sh/docs/topics/v2_v3_migration/</a></li>
+<li><a href="https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3/" rel="nofollow">https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3/</a></li>
+</ul>
+<h3><a id="user-content-to-700" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#to-700"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>To 7.0.0</h3>
+<ul>
+<li>Several parameters were renamed or disappeared in favor of new ones on this major version:
+<ul>
+<li><code>replicas</code> is renamed to <code>replicaCount</code>.</li>
+<li><code>securityContext.*</code> is deprecated in favor of <code>podSecurityContext</code> and <code>containerSecurityContext</code>.</li>
+<li>Authentication parameters were reorganized under the <code>auth.*</code> parameter:
+<ul>
+<li><code>rabbitmq.username</code>, <code>rabbitmq.password</code>, and <code>rabbitmq.erlangCookie</code> are now <code>auth.username</code>, <code>auth.password</code>, and <code>auth.erlangCookie</code> respectively.</li>
+<li><code>rabbitmq.tls.*</code> parameters are now under <code>auth.tls.*</code>.</li>
+</ul>
+</li>
+<li>Parameters prefixed with <code>rabbitmq.</code> were renamed removing the prefix. E.g. <code>rabbitmq.configuration</code> -&gt; renamed to <code>configuration</code>.</li>
+<li><code>rabbitmq.rabbitmqClusterNodeName</code> is deprecated.</li>
+<li><code>rabbitmq.setUlimitNofiles</code> is deprecated.</li>
+<li><code>forceBoot.enabled</code> is renamed to <code>clustering.forceBoot</code>.</li>
+<li><code>loadDefinition.secretName</code> is renamed to <code>loadDefinition.existingSecret</code>.</li>
+<li><code>metics.port</code> is remamed to <code>service.metricsPort</code>.</li>
+<li><code>service.extraContainerPorts</code> is renamed to <code>extraContainerPorts</code>.</li>
+<li><code>service.nodeTlsPort</code> is renamed to <code>service.tlsNodePort</code>.</li>
+<li><code>podDisruptionBudget</code> is deprecated in favor of <code>pdb.create</code>, <code>pdb.minAvailable</code>, and <code>pdb.maxUnavailable</code>.</li>
+<li><code>rbacEnabled</code> -&gt; deprecated in favor of <code>rbac.create</code>.</li>
+<li>New parameters: <code>serviceAccount.create</code>, and <code>serviceAccount.name</code>.</li>
+<li>New parameters: <code>memoryHighWatermark.enabled</code>, <code>memoryHighWatermark.type</code>, and <code>memoryHighWatermark.value</code>.</li>
+</ul>
+</li>
+<li>Chart labels and Ingress configuration were adapted to follow the Helm charts best practices.</li>
+<li>Initialization logic now relies on the container.</li>
+<li>This version introduces <code>bitnami/common</code>, a <a href="https://helm.sh/docs/topics/library_charts/#helm" rel="nofollow">library chart</a> as a dependency. More documentation about this new utility could be found <a href="https://github.com/bitnami/charts/tree/master/bitnami/common#bitnami-common-library-chart">here</a>. Please, make sure that you have updated the chart dependencies before executing any upgrade.</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li>Backwards compatibility is not guaranteed.</li>
+<li>Compatibility with non Bitnami images is not guaranteed anymore.</li>
+</ul>
+<h3><a id="user-content-to-600" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#to-600"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>To 6.0.0</h3>
+<p>This new version updates the RabbitMQ image to a <a href="https://github.com/bitnami/bitnami-docker-rabbitmq#3715-r18-3715-ol-7-r19">new version based on bash instead of node.js</a>. However, since this Chart overwrites the container's command, the changes to the container shouldn't affect the Chart. To upgrade, it may be needed to enable the <code>fastBoot</code> option, as it is already the case from upgrading from 5.X to 5.Y.</p>
+<h3><a id="user-content-to-500" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#to-500"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>To 5.0.0</h3>
+<p>This major release changes the clustering method from <code>ip</code> to <code>hostname</code>.
+This change is needed to fix the persistence. The data dir will now depend on the hostname which is stable instead of the pod IP that might change.</p>
+<blockquote>
+<p>IMPORTANT: Note that if you upgrade from a previous version you will lose your data.</p>
+</blockquote>
+<h3><a id="user-content-to-300" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#to-300"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>To 3.0.0</h3>
+<p>Backwards compatibility is not guaranteed unless you modify the labels used on the chart's deployments.
+Use the workaround below to upgrade from versions previous to 3.0.0. The following example assumes that the release name is rabbitmq:</p>
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">kubectl delete statefulset rabbitmq --cascade=false</span></pre></div>
+<h2><a id="user-content-bitnami-kubernetes-documentation" class="anchor" aria-hidden="true" href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq#bitnami-kubernetes-documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bitnami Kubernetes Documentation</h2>
+<p>Bitnami Kubernetes documentation is available at <a href="https://docs.bitnami.com/" rel="nofollow">https://docs.bitnami.com/</a>. You can find there the following resources:</p>
+<ul>
+<li><a href="https://docs.bitnami.com/kubernetes/infrastructure/rabbitmq/" rel="nofollow">Documentation for RabbitMQ Helm chart</a></li>
+<li><a href="https://docs.bitnami.com/kubernetes/" rel="nofollow">Get Started with Kubernetes guides</a></li>
+<li><a href="https://docs.bitnami.com/kubernetes/apps/" rel="nofollow">Bitnami Helm charts documentation</a></li>
+<li><a href="https://docs.bitnami.com/kubernetes/faq/" rel="nofollow">Kubernetes FAQs</a></li>
+<li><a href="https://docs.bitnami.com/tutorials/" rel="nofollow">Kubernetes Developer guides</a></li>
+</ul>
+</article>
+      </div>
+  </div>
+
+</div>
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+
+  </div>
+
+          
+<div class="footer container-xl width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">© 2021 GitHub, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://www.githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:Docs" href="https://docs.github.com/">Docs</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://services.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+  
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden="">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden="">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+    <span class="js-stale-session-flash-signed-in" hidden="">You signed in with another tab or window. <a href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden="">You signed out in another tab or window. <a href="https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq">Reload</a> to refresh your session.</span>
+  </div>
+    <template id="site-details-dialog"></template>
+
+    <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+
+  
+
+
+<div aria-live="polite" class="sr-only"></div></body></html>
